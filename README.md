@@ -37,7 +37,7 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 <p align="center"><img src="/tex/6959176790cac71173cd72727ebd0ab6.svg?invert_in_darkmode&sanitize=true" align=middle width=629.82298335pt height=294.3619569pt/></p>
 
-- **identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of total differential in e.q. (19).
+- **identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of total differential in eq. (19).
 
 <p align="center"><img src="/tex/58cbcc2d86dfc0d5e1ec973d164b4f4f.svg?invert_in_darkmode&sanitize=true" align=middle width=495.735801pt height=167.75981309999997pt/></p>
 
@@ -81,7 +81,7 @@ finally from eq. (2), we get <img src="/tex/c6c1fe4311d8e38885392c2de18807a6.svg
 
 **E.g. 2**, <img src="/tex/2f241d50ab9d1c15bdbfc64ffdcefbf4.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31119589999999pt height=37.28212289999999pt/>,
 
-<p align="center"><img src="/tex/c570b48b8b843b0545befe316f2eb61f.svg?invert_in_darkmode&sanitize=true" align=middle width=630.4479126pt height=258.7181157pt/></p>
+<p align="center"><img src="/tex/13189aca3e82d0e008b44a6dc1e7fe60.svg?invert_in_darkmode&sanitize=true" align=middle width=630.4479126pt height=258.7181157pt/></p>
 
 finally from eq. (3), we get <img src="/tex/e5707fda1f7e245c298e383e9f86c6bb.svg?invert_in_darkmode&sanitize=true" align=middle width=195.57101684999998pt height=37.28212289999999pt/>. From line 3 to 4, we use the conclusion of <img src="/tex/d1e757ff485f61fbd67a2c6e31bcf033.svg?invert_in_darkmode&sanitize=true" align=middle width=84.64209435pt height=34.28165400000002pt/>, that is to say, we can derive more complicated  matrix derivatives by properly utilizing the existing ones. From line 6 to 7, we use <img src="/tex/d84c3c399a65b6a8a262aa3315ab4b75.svg?invert_in_darkmode&sanitize=true" align=middle width=66.32411774999998pt height=24.65753399999998pt/> to introduce the <img src="/tex/a4035517c00ae250425f359c6b7eccfb.svg?invert_in_darkmode&sanitize=true" align=middle width=30.182756999999988pt height=24.65753399999998pt/> in order to use eq. (3) later, which is common in scalar-by-matrix derivatives.
 
