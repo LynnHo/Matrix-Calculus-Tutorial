@@ -29,7 +29,7 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 ### 1.1 Differential identities
 
-- **identities 1**
+- **Identities 1**
 
 \begin{align}
 dy&=\frac{dy}{dx}dx\\
@@ -40,7 +40,7 @@ d\mathbf{y}&=\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}\\
 d\mathbf{Y}&=\frac{d\mathbf{Y}}{dx}dx
 \end{align}
 
-- **identities 2**
+- **Identities 2**
 
 \begin{align}
 \setcounter{equation}{6}
@@ -58,7 +58,7 @@ d(\mathrm{tr}(\mathbf{X}))&=\mathrm{tr}(d\mathbf{X}))\\
 d(|\mathbf{X}|)&=\mathrm{tr}(adj(\mathbf{X})d\mathbf{X})=|\mathbf{X}|\mathrm{tr}(\mathbf{X}^{-1}d\mathbf{X})
 \end{align}
 
-- **identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of total differential in eq. (19).
+- **Identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of total differential in eq. (19).
 
 \begin{align}
 \setcounter{equation}{18}
