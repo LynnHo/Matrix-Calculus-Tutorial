@@ -29,15 +29,15 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 ### 1.1 Differential identities
 
-- **identities 1**
+- **Identities 1**
 
 <p align="center"><img src="/tex/1367d0cdd0fbd79abf57d0a6d4e5424b.svg?invert_in_darkmode&sanitize=true" align=middle width=410.3851191pt height=235.74932535pt/></p>
 
-- **identities 2**
+- **Identities 2**
 
 <p align="center"><img src="/tex/6959176790cac71173cd72727ebd0ab6.svg?invert_in_darkmode&sanitize=true" align=middle width=629.82298335pt height=294.3619569pt/></p>
 
-- **identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of total differential in eq. (19).
+- **Identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of total differential in eq. (19).
 
 <p align="center"><img src="/tex/58cbcc2d86dfc0d5e1ec973d164b4f4f.svg?invert_in_darkmode&sanitize=true" align=middle width=495.735801pt height=167.75981309999997pt/></p>
 
