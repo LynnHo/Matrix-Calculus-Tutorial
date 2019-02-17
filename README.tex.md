@@ -58,7 +58,7 @@ d(\mathrm{tr}(\mathbf{X}))&=\mathrm{tr}(d\mathbf{X}))\\
 d(|\mathbf{X}|)&=\mathrm{tr}(adj(\mathbf{X})d\mathbf{X})=|\mathbf{X}|\mathrm{tr}(\mathbf{X}^{-1}d\mathbf{X})
 \end{align}
 
-- **identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of total differential in e.q. (19).
+- **identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of total differential in eq. (19).
 
 \begin{align}
 \setcounter{equation}{18}
@@ -130,10 +130,10 @@ finally from eq. (2), we get $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}=
 \begin{align*}
 d(||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2) & =d((\mathbf{W}\mathbf{x}+\mathbf{b})^\top (\mathbf{W}\mathbf{x}+\mathbf{b}))                                   & & \\
                                            & =d(\mathbf{y}^\top \mathbf{y})\Big|_{\mathbf{y}=\mathbf{W}\mathbf{x}+\mathbf{b}}                               & & \\
-                                           & =\frac{d(\mathbf{y}^\top\mathbf{y})}{d\mathbf{y}}d\mathbf{y}\Big|_{\mathbf{y}=\mathbf{W}\mathbf{x}+\mathbf{b}} & & \text{from e.q (2)}\\
+                                           & =\frac{d(\mathbf{y}^\top\mathbf{y})}{d\mathbf{y}}d\mathbf{y}\Big|_{\mathbf{y}=\mathbf{W}\mathbf{x}+\mathbf{b}} & & \text{from eq. (2)}\\
                                            & =2\mathbf{y}^\top d\mathbf{y}\Big|_{\mathbf{y}=\mathbf{W}\mathbf{x}+\mathbf{b}}                                & & \text{from e.g. 1, } \frac{d\mathbf{x}^\top \mathbf{x}}{d\mathbf{x}}=2\mathbf{x}^\top\\
                                            & =2(\mathbf{W}\mathbf{x}+\mathbf{b})^\top d(\mathbf{W}\mathbf{x}+\mathbf{b})                                    & & \\
-                                           & =2(\mathbf{W}\mathbf{x}+\mathbf{b})^\top (d\mathbf{W})\mathbf{x}                                               & & \text{from e.q (12)}\\
+                                           & =2(\mathbf{W}\mathbf{x}+\mathbf{b})^\top (d\mathbf{W})\mathbf{x}                                               & & \text{from eq. (12)}\\
                                            & =\mathrm{tr}(2(\mathbf{W}\mathbf{x}+\mathbf{b})^\top (d\mathbf{W})\mathbf{x})                                  & & \text{from } x=\mathrm{tr}(x)\\
                                            & =\mathrm{tr}(2\mathbf{x}(\mathbf{W}\mathbf{x}+\mathbf{b})^\top d\mathbf{W})                                    & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB}),
 \end{align*}
