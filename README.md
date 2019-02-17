@@ -115,4 +115,4 @@ therefore,
 
 
 ## 2. Conclusion
-Now, if we fully understand the core mind of the above examples, I believe we can derive most matrix derivatives in [Wiki - Matrix Calculus](https://en.wikipedia.org/wiki/Matrix_calculus) by ourself. Besides, correct me if there are mistakes, and raise issues for detailed steps to compute the matrix derivatives that you are interested in.
+Now, if we fully understand the core mind of the above examples, I believe we can derive most matrix derivatives in [Wiki - Matrix Calculus](https://en.wikipedia.org/wiki/Matrix_calculus) by ourself. Please correct me if there is any mistakes, and raise issues for detailed steps to compute the matrix derivatives that you are interested in.
