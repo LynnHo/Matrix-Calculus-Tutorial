@@ -8,10 +8,10 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 - [0. Notation](#0-notation)
 - [1. Matrix Calculus via Differentials](#1-matrix-calculus-via-differentials)
-    * [1.1 Differential identities](#11-differential-identities)
-    * [1.2 Deriving matrix derivatives](#12-deriving-matrix-derivatives)
-        + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
-        + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
+  * [1.1 Differential Identities](#11-differential-identities)
+  * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
+    + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
+    + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
 - [2. Conclusion](#2-conclusion)
 
 <!-- /MarkdownTOC -->
@@ -27,7 +27,7 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 ## 1. Matrix Calculus via Differentials
 
-### 1.1 Differential identities
+### 1.1 Differential Identities
 
 - **Identities 1**
 
@@ -41,7 +41,7 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 <p align="center"><img src="/tex/58cbcc2d86dfc0d5e1ec973d164b4f4f.svg?invert_in_darkmode&sanitize=true" align=middle width=495.735801pt height=167.75981309999997pt/></p>
 
-### 1.2 Deriving matrix derivatives
+### 1.2 Deriving Matrix Derivatives
 
 To derive a matrix derivative, we ***repeat using the identities 1 (the process is actually a chain rule)*** assisted by identities 2.
 
