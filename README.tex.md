@@ -184,4 +184,4 @@ d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}.
 
 
 ## 2. Conclusion
-Now, if we fully understand the core mind of the above examples, I believe we can derive most matrix derivatives in [Wiki - Matrix Calculus](https://en.wikipedia.org/wiki/Matrix_calculus) by ourself. Please correct me if there is any mistakes, and raise issues for detailed steps to compute the matrix derivatives that you are interested in.
+Now, if we fully understand the core mind of the above examples, I believe we can derive most matrix derivatives in [Wiki - Matrix Calculus](https://en.wikipedia.org/wiki/Matrix_calculus) by ourself. Please correct me if there is any mistake, and raise issues to request the detailed steps of computing the matrix derivatives that you are interested in.
