@@ -8,10 +8,10 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 - [0. Notation](#0-notation)
 - [1. Matrix Calculus via Differentials](#1-matrix-calculus-via-differentials)
-    * [1.1 Differential identities](#11-differential-identities)
-    * [1.2 Deriving matrix derivatives](#12-deriving-matrix-derivatives)
-        + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
-        + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
+  * [1.1 Differential Identities](#11-differential-identities)
+  * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
+    + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
+    + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
 - [2. Conclusion](#2-conclusion)
 
 <!-- /MarkdownTOC -->
@@ -27,7 +27,7 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 ## 1. Matrix Calculus via Differentials
 
-### 1.1 Differential identities
+### 1.1 Differential Identities
 
 - **Identities 1**
 
@@ -68,7 +68,7 @@ d\mathbf{f}(x,\mathbf{y})&=\frac{\partial \mathbf{f}}{\partial x}dx+\frac{\parti
 d\mathbf{F}(x,y,z)&=\frac{\partial \mathbf{F}}{\partial x}dx+\frac{\partial \mathbf{F}}{\partial y}dy+\frac{\partial \mathbf{F}}{\partial z}dz
 \end{align}
 
-### 1.2 Deriving matrix derivatives
+### 1.2 Deriving Matrix Derivatives
 
 To derive a matrix derivative, we ***repeat using the identities 1 (the process is actually a chain rule)*** assisted by identities 2.
 
