@@ -221,6 +221,34 @@ therefore,
 d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}.
 \end{align*}
 
+**E.g. 6 (two layer neural network)**, $l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))$, $l$ is a loss function such as Softmax Cross Entropy and MSE, $\sigma$ is an element-wise activation function such as Sigmoid and ReLU.
+
+For $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_2}$,
+
+\begin{align*}
+d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))     & & \text{from eq. (2), and let } \mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})\\
+                                                            & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2)\sigma(\mathbf{W}_1\mathbf{x})     & & \text{from eq. (12)}\\
+                                                            & =tr(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2)\sigma(\mathbf{W}_1\mathbf{x})) & & \text{from } x=\mathrm{tr}(x)\\
+                                                            & =tr(\sigma(\mathbf{W}_1\mathbf{x})\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d\mathbf{W}_2)   & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB}),
+\end{align*}
+
+finally from eq. (3), we get $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_2}=\sigma(\mathbf{W}_1\mathbf{x})\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\Big|_{\mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})}$.
+
+For $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_1}$,
+
+\begin{align*}
+d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))     & & \text{from eq. (2), and let } \mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})\\
+                                                            & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2d(\sigma(\mathbf{W}_1\mathbf{x}))     & & \text{from eq. (12)}\\
+                                                            & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2[\sigma'(\mathbf{W}_1\mathbf{x})\circ d(\mathbf{W}_1\mathbf{x})]      & & \text{from } d(\sigma(\mathbf{x}))=\sigma'(\mathbf{x})\circ d\mathbf{x}\\
+                                                            & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2[\sigma'(\mathbf{W}_1\mathbf{x})\circ (d(\mathbf{W}_1)\mathbf{x})]& & \text{from eq. (12)}\\
+                                                            & =[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)^\top\circ\sigma'(\mathbf{W}_1\mathbf{x})]^\top d(\mathbf{W}_1)\mathbf{x}& & \text{from } \mathbf{x}^\top(\mathbf{y}\circ\mathbf{z})=(\mathbf{x}\circ\mathbf{y})^\top\mathbf{z}\\
+                                                            &=[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d(\mathbf{W}_1)\mathbf{x}& & \\
+                                                            &=\mathrm{tr}([(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d(\mathbf{W}_1)\mathbf{x}) & & \text{from } x=\mathrm{tr}(x)\\
+                                                            &=\mathrm{tr}(\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d\mathbf{W}_1) & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB}),
+\end{align*}
+
+finally from eq. (3), we get $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_1}=\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top]\Big|_{\mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})}$.
+
 \* *See [examples.md](./examples.md) for more examples.*
 
 
