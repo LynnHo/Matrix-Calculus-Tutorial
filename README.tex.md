@@ -21,7 +21,7 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 - $x$, $\mathbf{x}$ and $\mathbf{X}$ denote $scalar$, $\mathbf{vector}$ and $\mathbf{MATRIX}$ respectively.
 - The first half of the alphabet $(a, b, c, \cdots)$ denote constants, and the second half $(t, x, y, …)$ denote variables.
-- $\mathbf{X}^\top$ denotes matrix transpose, $\mathrm{tr}(\mathbf{X})$ is the trace, and  $|\mathbf{X}|$ is the determinant.
+- $\mathbf{X}^\top$ denotes matrix transpose, $\mathrm{tr}(\mathbf{X})$ is the trace, $|\mathbf{X}|$ is the determinant, and $adj(\mathbf{X})$ is the adjugate matrix.
 - $\otimes$ is the Kronecker product and $\circ$ is the Hadamard product.
 - Here we use ***numerator layout***, while the online tool [Matrix Calculus](http://www.matrixcalculus.org/) seems to use ***mixed layout***. Please refer to [Wiki - Matrix Calculus - Layout Conventions](https://en.wikipedia.org/wiki/Matrix_calculus#Layout_conventions) for the detailed layout definitions, and keep in mind that different layouts lead to different results. Below is the numerator layout,
 
