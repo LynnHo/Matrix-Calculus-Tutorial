@@ -23,7 +23,48 @@ In this page we introduce a ***differential*** based method for vector and matri
 - The first half of the alphabet $(a, b, c, \cdots)$ denote constants, and the second half $(t, x, y, …)$ denote variables.
 - $\mathbf{X}^\top$ denotes matrix transpose, $\mathrm{tr}(\mathbf{X})$ is the trace, and  $|\mathbf{X}|$ is the determinant.
 - $\otimes$ is the Kronecker product and $\circ$ is the Hadamard product.
-- Here we use ***numerator layout***, while the online tool [Matrix Calculus](http://www.matrixcalculus.org/) seems to use ***mixed layout***. Please refer to [Wiki - Matrix Calculus - Layout Conventions](https://en.wikipedia.org/wiki/Matrix_calculus#Layout_conventions) for the layout definitions, and keep in mind that different layouts lead to different results.
+- Here we use ***numerator layout***, while the online tool [Matrix Calculus](http://www.matrixcalculus.org/) seems to use ***mixed layout***. Please refer to [Wiki - Matrix Calculus - Layout Conventions](https://en.wikipedia.org/wiki/Matrix_calculus#Layout_conventions) for the layout definitions, and keep in mind that different layouts lead to different results. The below is numerator layout,
+
+\begin{align*}
+\frac{dy}{d\mathbf{x}} =
+\left[
+\frac{\partial y}{\partial x_1}
+\frac{\partial y}{\partial x_2}
+\cdots
+\frac{\partial y}{\partial x_n}
+\right],
+\end{align*}
+
+\begin{align*}
+\frac{d\mathbf{y}}{dx} =
+\begin{bmatrix}
+\frac{\partial y_1}{\partial x}\\
+\frac{\partial y_2}{\partial x}\\
+\vdots\\
+\frac{\partial y_m}{\partial x}\\
+\end{bmatrix},
+\end{align*}
+
+\begin{align*}
+\frac{d\mathbf{y}}{d\mathbf{x}} =
+\begin{bmatrix}
+\frac{\partial y_1}{\partial x_1} & \frac{\partial y_1}{\partial x_2} & \cdots & \frac{\partial y_1}{\partial x_n}\\
+\frac{\partial y_2}{\partial x_1} & \frac{\partial y_2}{\partial x_2} & \cdots & \frac{\partial y_2}{\partial x_n}\\
+\vdots & \vdots & \ddots & \vdots\\
+\frac{\partial y_m}{\partial x_1} & \frac{\partial y_m}{\partial x_2} & \cdots & \frac{\partial y_m}{\partial x_n}\\
+\end{bmatrix},
+\end{align*}
+
+\begin{align*}
+\frac{dy}{d\mathbf{X}} =
+\begin{bmatrix}
+\frac{\partial y}{\partial x_{11}} & \frac{\partial y}{\partial x_{21}} & \cdots & \frac{\partial y}{\partial x_{p1}}\\
+\frac{\partial y}{\partial x_{12}} & \frac{\partial y}{\partial x_{22}} & \cdots & \frac{\partial y}{\partial x_{p2}}\\
+\vdots & \vdots & \ddots & \vdots\\
+\frac{\partial y}{\partial x_{1q}} & \frac{\partial y}{\partial x_{2q}} & \cdots & \frac{\partial y}{\partial x_{pq}}\\
+\end{bmatrix}.
+\end{align*}
+
 
 ## 1. Matrix Calculus via Differentials
 
