@@ -166,7 +166,7 @@ d(\mathbf{x}^\top \mathbf{x}) & =d(\mathbf{x}^\top )\mathbf{x}+\mathbf{x}^\top d
 
 finally from eq. (2), we get $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}=2\mathbf{x}^\top$.
 
-**E.g. 2**, $\frac{d||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2}{d\mathbf{W}}$,
+<a name="y=Wx"></a>**E.g. 2**, $\frac{d||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2}{d\mathbf{W}}$,
 
 \begin{align*}
 d(||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2) & =d((\mathbf{W}\mathbf{x}+\mathbf{b})^\top (\mathbf{W}\mathbf{x}+\mathbf{b}))                                   & & \\
@@ -191,7 +191,7 @@ d(\ln|\mathbf{X}|) & =|\mathbf{X}|^{-1}d(|\mathbf{X}|)                          
 
 finally from eq. (3), we get $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}=\mathbf{X}^{-1}$.
 
-**E.g. 4**, $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}$,
+<a name="Y=AX"></a>**E.g. 4**, $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}$,
 
 \begin{align*}
 d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B})) & =\mathrm{tr}(d(\mathbf{A}\mathbf{X}\mathbf{B})) & & \text{from eq. (17)}\\

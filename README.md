@@ -8,10 +8,10 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 - [0. Notation](#0-notation)
 - [1. Matrix Calculus via Differentials](#1-matrix-calculus-via-differentials)
-  * [1.1 Differential Identities](#11-differential-identities)
-  * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
-    + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
-    + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
+    * [1.1 Differential Identities](#11-differential-identities)
+    * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
+        + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
+        + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
 - [2. Conclusion](#2-conclusion)
 
 <!-- /MarkdownTOC -->
@@ -88,7 +88,7 @@ finally from eq. (5), we get <img src="/tex/f8f3b0df92ab2d964857892f8ffec8b0.svg
 
 finally from eq. (2), we get <img src="/tex/c6c1fe4311d8e38885392c2de18807a6.svg?invert_in_darkmode&sanitize=true" align=middle width=94.91611635pt height=37.282175700000025pt/>.
 
-**E.g. 2**, <img src="/tex/2f241d50ab9d1c15bdbfc64ffdcefbf4.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31119589999999pt height=37.28212289999999pt/>,
+<a name="y=Wx"></a>**E.g. 2**, <img src="/tex/2f241d50ab9d1c15bdbfc64ffdcefbf4.svg?invert_in_darkmode&sanitize=true" align=middle width=70.31119589999999pt height=37.28212289999999pt/>,
 
 <p align="center"><img src="/tex/13189aca3e82d0e008b44a6dc1e7fe60.svg?invert_in_darkmode&sanitize=true" align=middle width=630.4479126pt height=258.7181157pt/></p>
 
@@ -100,7 +100,7 @@ finally from eq. (3), we get <img src="/tex/e5707fda1f7e245c298e383e9f86c6bb.svg
 
 finally from eq. (3), we get <img src="/tex/840804c350d128bab42a8842217b8afb.svg?invert_in_darkmode&sanitize=true" align=middle width=104.29809389999998pt height=33.20539859999999pt/>.
 
-**E.g. 4**, <img src="/tex/4a3ad3efe4ae7a1b4d75f4b88a821967.svg?invert_in_darkmode&sanitize=true" align=middle width=70.45737435pt height=33.20539859999999pt/>,
+<a name="Y=AX"></a>**E.g. 4**, <img src="/tex/4a3ad3efe4ae7a1b4d75f4b88a821967.svg?invert_in_darkmode&sanitize=true" align=middle width=70.45737435pt height=33.20539859999999pt/>,
 
 <p align="center"><img src="/tex/9e76b3fb1921ec511dade299183d091e.svg?invert_in_darkmode&sanitize=true" align=middle width=558.8805387pt height=65.753424pt/></p>
 
