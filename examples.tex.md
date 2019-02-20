@@ -14,7 +14,7 @@
 **E.g. 1**, $\frac{d(z(\mathbf{y}(\mathbf{X})))}{d\mathbf{X}}$, ($\mathbf{X}$ is a $p\times q$ matrix),
 
 \begin{align*}
-\frac{dz}{d\mathbf{X}} &=
+\frac{dz}{d\mathbf{X}}&=
 \begin{bmatrix}
 \frac{\partial z}{\partial x_{11}} & \frac{\partial z}{\partial x_{21}} & \cdots & \frac{\partial z}{\partial x_{p1}}\\
 \frac{\partial z}{\partial x_{12}} & \frac{\partial z}{\partial x_{22}} & \cdots & \frac{\partial z}{\partial x_{p2}}\\
