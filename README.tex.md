@@ -1,4 +1,4 @@
-*read *.md, do not read *.tex.md*
+*read \*.md, do not read \*.tex.md*
 
 <h1> <p align="center"> Matrix Calculus </p> </h1>
 
