@@ -1,3 +1,5 @@
+*<p align="right"> read *.md, do not read *.tex.md </p>*
+
 <h1> <p align="center"> Matrix Calculus </p> </h1>
 
 In this page we introduce a ***differential*** based method for vector and matrix derivatives (matrix calculus), which ***only needs a few simple rules to derive most matrix derivatives***. This method is useful and well established in mathematics, however few documents clearly or detailedly describe it. Therefore, we make this page aiming at comprehensive introduction of ***matrix calculus via differentials***.
@@ -8,10 +10,10 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 - [0. Notation](#0-notation)
 - [1. Matrix Calculus via Differentials](#1-matrix-calculus-via-differentials)
-  * [1.1 Differential Identities](#11-differential-identities)
-  * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
-    + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
-    + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
+    * [1.1 Differential Identities](#11-differential-identities)
+    * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
+        + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
+        + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
 - [2. Conclusion](#2-conclusion)
 
 <!-- /MarkdownTOC -->
