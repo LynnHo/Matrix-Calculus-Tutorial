@@ -78,7 +78,7 @@ Substitute eq. (4) into eq. (1),
 =& \operatorname{arg\,max}\,\, \lambda_1 + \lambda_2 + \cdots + \lambda_k,
 \end{align*}
 
-therefore ***$\lambda_1$, $\lambda_2$, ..., $\lambda_k$ should be the largest k eigenvalue***. $\blacksquare$
+therefore ***$\lambda_1$, $\lambda_2$, ..., $\lambda_k$ should be the largest k eigenvalues***. $\blacksquare$
 
 
 
