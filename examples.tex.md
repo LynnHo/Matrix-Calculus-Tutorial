@@ -62,7 +62,7 @@ Left multiply the equation by $\mathbf{W}^\top$ and use eq. (2): $\mathbf{W}^\to
 \setcounter{equation}{3}
                 & & \mathbf{X}\mathbf{X}^\top\mathbf{W}                                                                                              & =\mathbf{W}\mathbf{\Lambda}\\
 \Leftrightarrow & & [\mathbf{X}\mathbf{X}^\top\mathbf{w}_1~~~\mathbf{X}\mathbf{X}^\top\mathbf{w}_2~~~\cdots~~~\mathbf{X}\mathbf{X}^\top\mathbf{w}_k] & =[\lambda_1\mathbf{w}_1~~~\lambda_1\mathbf{w}_2~~~\cdots~~~\lambda_k\mathbf{w}_k]\nonumber\\
-\Leftrightarrow & & \mathbf{X}\mathbf{X}^\top\mathbf{w}_j                                                                                            & =\lambda_j \mathbf{w}_j,~j=1,2,\cdots,k\nonumber
+\Leftrightarrow & & \mathbf{X}\mathbf{X}^\top\mathbf{w}_j                                                                                            & =\lambda_j \mathbf{w}_j,~j=1,2,\cdots,k,\nonumber
 \end{align}
 
 from which we can see ***$\lambda_j$ is the eigenvalue of $\mathbf{X}\mathbf{X}^\top$ and $\mathbf{w}_j$ is the corresponding eigenvector***.
