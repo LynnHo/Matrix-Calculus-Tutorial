@@ -23,7 +23,7 @@ The optimization problem of PCA is,
                                                    & \mathbf{Y}\mathbf{Y}^\top = \mathbf{\Lambda}                     & & \mathbf{\Lambda} \text{ is a diagonal matrix, which means decorrelation.}
 \end{align}
 
-We can simplify the above problem by using $\|\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X}\|_\mathrm{F}^2=\mathrm{tr}((\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X})^\top(\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X})$ and $\mathbf{W}^\top\mathbf{W}=\mathbf{I}$, as
+We can simplify the above problem by using $\|\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X}\|_\mathrm{F}^2=\mathrm{tr}((\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X})^\top(\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X}))$ and $\mathbf{W}^\top\mathbf{W}=\mathbf{I}$, as
 
 \begin{align*}
 \underset{\mathbf{W}}{\operatorname{arg\,max}}\,\, & \mathrm{tr}(\mathbf{X}^\top\mathbf{W}\mathbf{W}^\top\mathbf{X}) \\
