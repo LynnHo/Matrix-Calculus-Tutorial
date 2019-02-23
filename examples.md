@@ -11,7 +11,7 @@
 
 **E.g. 1** Deriving PCA by minimizing MSE.
 
-- <img src="/tex/684d1346c74b9987de0c17d9c53cf2ac.svg?invert_in_darkmode&sanitize=true" align=middle width=203.00764604999998pt height=24.65753399999998pt/>, <img src="/tex/c416d0c6d8ab37f889334e2d1a9863c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.628015599999989pt height=14.611878600000017pt/> is the <img src="/tex/77a3b857d53fb44e33b53e4c8b68351a.svg?invert_in_darkmode&sanitize=true" align=middle width=5.663225699999989pt height=21.68300969999999pt/>-th sample with m dimension.
+- <img src="/tex/684d1346c74b9987de0c17d9c53cf2ac.svg?invert_in_darkmode&sanitize=true" align=middle width=203.00764604999998pt height=24.65753399999998pt/>, <img src="/tex/c416d0c6d8ab37f889334e2d1a9863c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.628015599999989pt height=14.611878600000017pt/> is the <img src="/tex/77a3b857d53fb44e33b53e4c8b68351a.svg?invert_in_darkmode&sanitize=true" align=middle width=5.663225699999989pt height=21.68300969999999pt/>-th sample with m dimension. Assume for simplicity that <img src="/tex/d05b996d2c08252f77613c25205a0f04.svg?invert_in_darkmode&sanitize=true" align=middle width=14.29216634999999pt height=22.55708729999998pt/> has zero mean.
 - <img src="/tex/805f1ba29a4965179d1766344a78003f.svg?invert_in_darkmode&sanitize=true" align=middle width=217.82867865pt height=24.65753399999998pt/>, <img src="/tex/831047ac6f850b0d588c94d84fc6f4c1.svg?invert_in_darkmode&sanitize=true" align=middle width=19.75740524999999pt height=14.611878600000017pt/> is the <img src="/tex/36b5afebdba34564d884d347484ac0c7.svg?invert_in_darkmode&sanitize=true" align=middle width=7.710416999999989pt height=21.68300969999999pt/>-th basis vector with m dimension.
 - <img src="/tex/c053a97af423085b0d1caff7bad21361.svg?invert_in_darkmode&sanitize=true" align=middle width=266.19297209999996pt height=27.91243950000002pt/>, <img src="/tex/9fb01b1f049f71510ce5c71a29044cc5.svg?invert_in_darkmode&sanitize=true" align=middle width=82.89732165pt height=27.91243950000002pt/> is the low dimension representation of <img src="/tex/c416d0c6d8ab37f889334e2d1a9863c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.628015599999989pt height=14.611878600000017pt/>.
 
@@ -19,7 +19,7 @@ The optimization problem of PCA is,
 
 <p align="center"><img src="/tex/141baf8e60a327f5c4cd6adf1789ac6b.svg?invert_in_darkmode&sanitize=true" align=middle width=650.67738615pt height=82.98738359999999pt/></p>
 
-We can simplify the above problem by using <img src="/tex/18e3e1eadbf0c79931951f0e3b04a493.svg?invert_in_darkmode&sanitize=true" align=middle width=400.91201039999993pt height=27.91243950000002pt/> and <img src="/tex/a5d4fd403c305234001f2f87d133519b.svg?invert_in_darkmode&sanitize=true" align=middle width=79.79416499999999pt height=27.91243950000002pt/>, as
+We can simplify the above problem by using <img src="/tex/5c1be6a2e2ad9f7bc05cc2b96913e716.svg?invert_in_darkmode&sanitize=true" align=middle width=407.3047274999999pt height=27.91243950000002pt/> and <img src="/tex/a5d4fd403c305234001f2f87d133519b.svg?invert_in_darkmode&sanitize=true" align=middle width=79.79416499999999pt height=27.91243950000002pt/>, as
 
 <p align="center"><img src="/tex/1f80db88a38606d519d5360fe87c5722.svg?invert_in_darkmode&sanitize=true" align=middle width=177.6595425pt height=78.8777946pt/></p>
 
