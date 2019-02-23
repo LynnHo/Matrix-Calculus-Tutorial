@@ -18,7 +18,7 @@
 The optimization problem of PCA is
 
 \begin{align}
-\underset{\mathbf{W}}{\operatorname{arg\,min}}\,\,  & \|\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X}\|_\mathrm{F}^2 & & \\
+\underset{\mathbf{W}}{\operatorname{arg\,min}}\,\, & \|\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X}\|_\mathrm{F}^2 & & \\
 \text{s.t.}\,\,\,\,\,\,\,\,                        & \mathbf{W}^\top\mathbf{W}=\mathbf{I}                             & & \text{orthogonal basis}\\
                                                    & \mathbf{Y}\mathbf{Y}^\top = \mathbf{\Lambda}.                    & & \mathbf{\Lambda} \text{ is a diagonal matrix, which means decorrelation}
 \end{align}
