@@ -121,7 +121,7 @@ To derive a matrix derivative, we ***repeat using the identities 1 (the process 
 
 \begin{align*}
 dz & =\frac{dz}{d\mathbf{y}}d\mathbf{y}                                 & & \text{from eq. (2)}\\
-   & =\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}, & & \text{from eq. (5)}
+   & =\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x} & & \text{from eq. (5)}
 \end{align*}
 
 finally from eq. (2), we get $\frac{dz}{d\mathbf{x}}=\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}$.
