@@ -117,16 +117,16 @@ To derive a matrix derivative, we ***repeat using the identities 1 (the process 
 
 #### 1.2.1 Abstract examples: repeat identities 1
 
-**E.g. 1**, $\frac{d(z(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$,
+**E.g. 1**, $\frac{d(z(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$.
 
 \begin{align*}
-dz & =\frac{dz}{d\mathbf{y}}d\mathbf{y}                                & & \text{from eq. (2)}\\
-   & =\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x} & & \text{from eq. (5)},
+dz & =\frac{dz}{d\mathbf{y}}d\mathbf{y}                                 & & \text{from eq. (2)}\\
+   & =\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}, & & \text{from eq. (5)}
 \end{align*}
 
 finally from eq. (2), we get $\frac{dz}{d\mathbf{x}}=\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}$.
 
-**E.g. 2**, $\frac{d(z(y(\mathbf{X})))}{d\mathbf{X}}$,
+**E.g. 2**, $\frac{d(z(y(\mathbf{X})))}{d\mathbf{X}}$.
 
 \begin{align*}
 dz & =\frac{dz}{dy}dy                                              & & \text{from eq. (1)}\\
@@ -136,28 +136,28 @@ dz & =\frac{dz}{dy}dy                                              & & \text{fro
 
 finally from eq. (3), we get $\frac{dz}{d\mathbf{X}}=\frac{dz}{dy}\frac{dy}{d\mathbf{X}}$.
 
-**E.g. 3**, $\frac{d(z(\mathbf{Y}(x)))}{dx}$,
+**E.g. 3**, $\frac{d(z(\mathbf{Y}(x)))}{dx}$.
 
 \begin{align*}
 dz & =\mathrm{tr}(\frac{dz}{d\mathbf{Y}}d\mathbf{Y})               & & \text{from eq. (3)}\\
-   & =\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{dx}dx)  & & \text{from eq. (6)},\\
+   & =\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{dx}dx)  & & \text{from eq. (6)}\\
    & =\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{dx})dx, & &
 \end{align*}
 
 finally from eq. (1), we get $\frac{dz}{dx}=\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{x})$.
 
-**E.g. 4**, $\frac{d(\mathbf{z}(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$,
+**E.g. 4**, $\frac{d(\mathbf{z}(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$.
 
 \begin{align*}
-d\mathbf{z} & =\frac{d\mathbf{z}}{d\mathbf{y}}d\mathbf{y}                                & & \text{from eq. (5)}\\
-            & =\frac{d\mathbf{z}}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x} & & \text{from eq. (5)}\\
+d\mathbf{z} & =\frac{d\mathbf{z}}{d\mathbf{y}}d\mathbf{y}                                 & & \text{from eq. (5)}\\
+            & =\frac{d\mathbf{z}}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}, & & \text{from eq. (5)}\\
 \end{align*}
 
 finally from eq. (5), we get $\frac{d\mathbf{z}}{d\mathbf{x}}=\frac{d\mathbf{z}}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}$.
 
 #### 1.2.2 Actual examples: assisted by identities 2
 
-**E.g. 1**, $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}$,
+**E.g. 1**, $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}$.
 
 \begin{align*}
 d(\mathbf{x}^\top \mathbf{x}) & =d(\mathbf{x}^\top )\mathbf{x}+\mathbf{x}^\top d\mathbf{x} & & \text{from eq. (10)}\\
@@ -168,7 +168,7 @@ d(\mathbf{x}^\top \mathbf{x}) & =d(\mathbf{x}^\top )\mathbf{x}+\mathbf{x}^\top d
 
 finally from eq. (2), we get $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}=2\mathbf{x}^\top$.
 
-<a name="y=Wx"></a>**E.g. 2**, $\frac{d||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2}{d\mathbf{W}}$,
+<a name="y=Wx"></a>**E.g. 2**, $\frac{d||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2}{d\mathbf{W}}$.
 
 \begin{align*}
 d(||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2) & =d((\mathbf{W}\mathbf{x}+\mathbf{b})^\top (\mathbf{W}\mathbf{x}+\mathbf{b}))                                   & & \\
@@ -178,12 +178,12 @@ d(||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2) & =d((\mathbf{W}\mathbf{x}+\mathbf{b}
                                            & =2(\mathbf{W}\mathbf{x}+\mathbf{b})^\top d(\mathbf{W}\mathbf{x}+\mathbf{b})                                    & & \\
                                            & =2(\mathbf{W}\mathbf{x}+\mathbf{b})^\top (d\mathbf{W})\mathbf{x}                                               & & \text{from eq. (12)}\\
                                            & =\mathrm{tr}(2(\mathbf{W}\mathbf{x}+\mathbf{b})^\top (d\mathbf{W})\mathbf{x})                                  & & \text{from } x=\mathrm{tr}(x)\\
-                                           & =\mathrm{tr}(2\mathbf{x}(\mathbf{W}\mathbf{x}+\mathbf{b})^\top d\mathbf{W})                                    & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB}),
+                                           & =\mathrm{tr}(2\mathbf{x}(\mathbf{W}\mathbf{x}+\mathbf{b})^\top d\mathbf{W}),                                   & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB})
 \end{align*}
 
 finally from eq. (3), we get $\frac{d||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2}{d\mathbf{W}}=2\mathbf{x}(\mathbf{W}\mathbf{x}+\mathbf{b})^\top$. From line 3 to 4, we use the conclusion of $\frac{d\mathbf{x}^\top \mathbf{x}}{d\mathbf{x}}=2\mathbf{x}^\top$, that is to say, we can derive more complicated  matrix derivatives by properly utilizing the existing ones. From line 6 to 7, we use $x=\mathrm{tr}(x)$ to introduce the $\mathrm{tr(\cdot)}$ in order to use eq. (3) later, which is common in scalar-by-matrix derivatives.
 
-**E.g. 3**, $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}$,
+**E.g. 3**, $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}$.
 
 \begin{align*}
 d(\ln|\mathbf{X}|) & =|\mathbf{X}|^{-1}d(|\mathbf{X}|)                                     & & \text{from eq. (1)}\\
@@ -193,45 +193,45 @@ d(\ln|\mathbf{X}|) & =|\mathbf{X}|^{-1}d(|\mathbf{X}|)                          
 
 finally from eq. (3), we get $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}=\mathbf{X}^{-1}$.
 
-<a name="Y=AX"></a>**E.g. 4**, $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}$,
+<a name="Y=AX"></a>**E.g. 4**, $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}$.
 
 \begin{align*}
 d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B})) & =\mathrm{tr}(d(\mathbf{A}\mathbf{X}\mathbf{B})) & & \text{from eq. (17)}\\
                                                & =\mathrm{tr}(\mathbf{A}(d\mathbf{X})\mathbf{B}) & & \text{from eq. (12)}\\
-                                               & =\mathrm{tr}(\mathbf{B}\mathbf{A}d\mathbf{X})   & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB}),
+                                               & =\mathrm{tr}(\mathbf{B}\mathbf{A}d\mathbf{X}),  & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB})
 \end{align*}
 
 finally from eq. (3), we get $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}=\mathbf{B}\mathbf{A}$.
 
-**E.g. 5**, prove $d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}$,
+**E.g. 5**, prove $d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}$.
 
-since,
+Since
 
 \begin{align*}
 \mathbf{X}^{-1}\mathbf{X}=\mathbf{I},
 \end{align*}
 
-then,
+then
 
 \begin{align*}
 d(\mathbf{X}^{-1}\mathbf{X})=d(\mathbf{X}^{-1})\mathbf{X} + \mathbf{X}^{-1}d\mathbf{X}=\mathbf{0},
 \end{align*}
 
-therefore,
+therefore
 
 \begin{align*}
 d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}.
 \end{align*}
 
-**E.g. 6 (two layer neural network)**, $l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))$, $l$ is a loss function such as Softmax Cross Entropy and MSE, $\sigma$ is an element-wise activation function such as Sigmoid and ReLU.
+**E.g. 6 - two layer neural network**, $l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))$, $l$ is a loss function such as Softmax Cross Entropy and MSE, $\sigma$ is an element-wise activation function such as Sigmoid and ReLU.
 
 For $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_2}$,
 
 \begin{align*}
 d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))     & & \text{from eq. (2), and let } \mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})\\
-                                                            & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2)\sigma(\mathbf{W}_1\mathbf{x})     & & \text{from eq. (12)}\\
-                                                            & =tr(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2)\sigma(\mathbf{W}_1\mathbf{x})) & & \text{from } x=\mathrm{tr}(x)\\
-                                                            & =tr(\sigma(\mathbf{W}_1\mathbf{x})\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d\mathbf{W}_2)   & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB}),
+                                                 & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2)\sigma(\mathbf{W}_1\mathbf{x})     & & \text{from eq. (12)}\\
+                                                 & =tr(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2)\sigma(\mathbf{W}_1\mathbf{x})) & & \text{from } x=\mathrm{tr}(x)\\
+                                                 & =tr(\sigma(\mathbf{W}_1\mathbf{x})\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d\mathbf{W}_2),  & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB})
 \end{align*}
 
 finally from eq. (3), we get $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_2}=\sigma(\mathbf{W}_1\mathbf{x})\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\Big|_{\mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})}$.
@@ -239,14 +239,14 @@ finally from eq. (3), we get $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\m
 For $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_1}$,
 
 \begin{align*}
-d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))     & & \text{from eq. (2), and let } \mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})\\
-                                                            & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2d(\sigma(\mathbf{W}_1\mathbf{x}))     & & \text{from eq. (12)}\\
-                                                            & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2[\sigma'(\mathbf{W}_1\mathbf{x})\circ d(\mathbf{W}_1\mathbf{x})]      & & \text{from } d(\sigma(\mathbf{x}))=\sigma'(\mathbf{x})\circ d\mathbf{x}\\
-                                                            & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2[\sigma'(\mathbf{W}_1\mathbf{x})\circ (d(\mathbf{W}_1)\mathbf{x})]& & \text{from eq. (12)}\\
-                                                            & =[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)^\top\circ\sigma'(\mathbf{W}_1\mathbf{x})]^\top d(\mathbf{W}_1)\mathbf{x}& & \text{from } \mathbf{x}^\top(\mathbf{y}\circ\mathbf{z})=(\mathbf{x}\circ\mathbf{y})^\top\mathbf{z}\\
-                                                            &=[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d(\mathbf{W}_1)\mathbf{x}& & \\
-                                                            &=\mathrm{tr}([(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d(\mathbf{W}_1)\mathbf{x}) & & \text{from } x=\mathrm{tr}(x)\\
-                                                            &=\mathrm{tr}(\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d\mathbf{W}_1) & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB}),
+d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))                                                    & & \text{from eq. (2), and let } \mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})\\
+                                                 & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2d(\sigma(\mathbf{W}_1\mathbf{x}))                                                    & & \text{from eq. (12)}\\
+                                                 & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2[\sigma'(\mathbf{W}_1\mathbf{x})\circ d(\mathbf{W}_1\mathbf{x})]                     & & \text{from } d(\sigma(\mathbf{x}))=\sigma'(\mathbf{x})\circ d\mathbf{x}\\
+                                                 & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2[\sigma'(\mathbf{W}_1\mathbf{x})\circ (d(\mathbf{W}_1)\mathbf{x})]                   & & \text{from eq. (12)}\\
+                                                 & =[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)^\top\circ\sigma'(\mathbf{W}_1\mathbf{x})]^\top d(\mathbf{W}_1)\mathbf{x}         & & \text{from } \mathbf{x}^\top(\mathbf{y}\circ\mathbf{z})=(\mathbf{x}\circ\mathbf{y})^\top\mathbf{z}\\
+                                                 & =[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d(\mathbf{W}_1)\mathbf{x}              & & \\
+                                                 & =\mathrm{tr}([(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d(\mathbf{W}_1)\mathbf{x}) & & \text{from } x=\mathrm{tr}(x)\\
+                                                 & =\mathrm{tr}(\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d\mathbf{W}_1),  & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB}
 \end{align*}
 
 finally from eq. (3), we get $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_1}=\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top]\Big|_{\mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})}$.
