@@ -10,10 +10,10 @@ In this page we introduce a ***differential*** based method for vector and matri
 
 - [0. Notation](#0-notation)
 - [1. Matrix Calculus via Differentials](#1-matrix-calculus-via-differentials)
-    * [1.1 Differential Identities](#11-differential-identities)
-    * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
-        + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
-        + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
+  * [1.1 Differential Identities](#11-differential-identities)
+  * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
+    + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
+    + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
 - [2. Conclusion](#2-conclusion)
 
 <!-- /MarkdownTOC -->
