@@ -15,12 +15,12 @@
 - $\mathbf{W}=[\mathbf{w}_1~~~\mathbf{w}_2~~~\cdots~~~\mathbf{w}_k]_{m\times k}$, $\mathbf{w}_j$ is the $j$-th basis vector with m dimension.
 - $\mathbf{Y}=\mathbf{W}^\top\mathbf{X}=[\mathbf{y}_1~~~\mathbf{y}_2~~~\cdots~~~\mathbf{y}_n]_{k\times n}$, $\mathbf{y}_i=\mathbf{W}^\top\mathbf{x}_i$ is the low dimension representation of $\mathbf{x}_i$.
 
-The optimization problem of PCA is,
+The optimization problem of PCA is
 
 \begin{align}
 \underset{\mathbf{W}}{\operatorname{arg\,min}}\,\, & \|\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X}\|_\mathrm{F}^2 & & \\
 \text{s.t.}\,\,\,\,\,\,\,\,                        & \mathbf{W}^\top\mathbf{W}=\mathbf{I}                             & & \text{orthogonal basis}\\
-                                                   & \mathbf{Y}\mathbf{Y}^\top = \mathbf{\Lambda}                     & & \mathbf{\Lambda} \text{ is a diagonal matrix, which means decorrelation.}
+                                                   & \mathbf{Y}\mathbf{Y}^\top = \mathbf{\Lambda}.                    & & \mathbf{\Lambda} \text{ is a diagonal matrix, which means decorrelation}
 \end{align}
 
 We can simplify the above problem by using $\|\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X}\|_\mathrm{F}^2=\mathrm{tr}((\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X})^\top(\mathbf{W}\mathbf{W}^\top \mathbf{X}-\mathbf{X}))$ and $\mathbf{W}^\top\mathbf{W}=\mathbf{I}$, as
@@ -50,13 +50,13 @@ dv & =\mathrm{tr}(\mathbf{X}^\top(d\mathbf{W}\mathbf{W}^\top)\mathbf{X})-\mathrm
    &=\mathrm{tr}(2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top d\mathbf{\mathbf{W}})).\\
 \end{align*}
 
-Therefore $\frac{\partial v}{\partial \mathbf{W}}=2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top-(\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top-(\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top$. Let it be $\mathbf{0}$, we get,
+Therefore $\frac{\partial v}{\partial \mathbf{W}}=2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top-(\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top-(\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top$. Let it be $\mathbf{0}$, we get
 
 \begin{align*}
 \mathbf{X}\mathbf{X}^\top\mathbf{W}=\mathbf{W}(\frac{\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top}{2})(\mathbf{I}-\frac{\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top}{2})^{-1}.
 \end{align*}
 
-Left multiply the equation by $\mathbf{W}^\top$ and use eq. (2): $\mathbf{W}^\top\mathbf{W}=\mathbf{I}$, and eq. (3): $\mathbf{Y}\mathbf{Y}^\top =\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top\mathbf{W} \mathbf{\Lambda}$, we get
+Left multiply the equation by $\mathbf{W}^\top$ and use eq. (2) - $\mathbf{W}^\top\mathbf{W}=\mathbf{I}$ and eq. (3) - $\mathbf{Y}\mathbf{Y}^\top =\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top\mathbf{W} \mathbf{\Lambda}$, we get
 
 \begin{align}
 \setcounter{equation}{3}
@@ -84,7 +84,7 @@ therefore ***$\lambda_1$, $\lambda_2$, ..., $\lambda_k$ should be the largest k 
 
 ## 2. Abstract Examples
 
-**E.g. 1**, $\frac{d(z(\mathbf{y}(\mathbf{X})))}{d\mathbf{X}}$, ($\mathbf{X}$ is a $p\times q$ matrix),
+**E.g. 1**, $\frac{d(z(\mathbf{y}(\mathbf{X})))}{d\mathbf{X}}$, where $\mathbf{X}$ is a $p\times q$ matrix.
 
 \begin{align*}
 \frac{dz}{d\mathbf{X}} &=
@@ -174,7 +174,7 @@ or
 
 In the above, we haven't used any differential technique, because we haven't defined the derivative of vector-by-matrix $\frac{d \mathbf{y}}{d\mathbf{X}}$ which could be a 3D tensor. However, in some cases such as $\mathbf{y}=\mathbf{W}\mathbf{x}$ (w.r.t. $\mathbf{W}$), the differential technique still works (see [this example](./README.md#y=Wx)).
 
-**E.g. 2**, $\frac{d(z(\mathbf{Y}(\mathbf{X})))}{d\mathbf{X}}$, ($\mathbf{Y}$ is a $m\times n$ matrix and $\mathbf{X}$ is a $p\times q$ matrix),
+**E.g. 2**, $\frac{d(z(\mathbf{Y}(\mathbf{X})))}{d\mathbf{X}}$, where $\mathbf{Y}$ is a $m\times n$ matrix and $\mathbf{X}$ is a $p\times q$ matrix.
 
 \begin{align*}
 \frac{dz}{d\mathbf{X}} &=
