@@ -231,7 +231,7 @@ In the above, we haven't used any differential technique, because we haven't def
 \begin{bmatrix}
 \frac{\partial z}{\partial \mathbf{Y}^\top}\circ\frac{\partial\mathbf{Y}}{\partial x_{11}} & \frac{\partial z}{\partial \mathbf{Y}^\top}\circ\frac{\partial\mathbf{Y}}{\partial x_{21}} & \cdots & \frac{\partial z}{\partial \mathbf{Y}^\top}\circ\frac{\partial\mathbf{Y}}{\partial x_{p1}}\\
 \frac{\partial z}{\partial \mathbf{Y}^\top}\circ\frac{\partial\mathbf{Y}}{\partial x_{12}} & \frac{\partial z}{\partial \mathbf{Y}^\top}\circ\frac{\partial\mathbf{Y}}{\partial x_{22}} & \cdots & \frac{\partial z}{\partial \mathbf{Y}^\top}\circ\frac{\partial\mathbf{Y}}{\partial x_{p2}}\\
-\vdots\\
+\vdots                                                                                     & \vdots                                                                                     & \ddots & \vdots\\
 \frac{\partial z}{\partial \mathbf{Y}^\top}\circ\frac{\partial\mathbf{Y}}{\partial x_{1q}} & \frac{\partial z}{\partial \mathbf{Y}^\top}\circ\frac{\partial\mathbf{Y}}{\partial x_{2q}} & \cdots & \frac{\partial z}{\partial \mathbf{Y}^\top}\circ\frac{\partial\mathbf{Y}}{\partial x_{pq}}
 \end{bmatrix}
 (\mathbf{I}_{p\times p}\otimes \mathbf{1}_{n})\\
@@ -240,7 +240,7 @@ In the above, we haven't used any differential technique, because we haven't def
 ((\mathbf{1}_{q\times p}\otimes \frac{\partial z}{\partial \mathbf{Y}^\top})\circ\begin{bmatrix}
 \frac{\partial\mathbf{Y}}{\partial x_{11}} & \frac{\partial\mathbf{Y}}{\partial x_{21}} & \cdots & \frac{\partial\mathbf{Y}}{\partial x_{p1}}\\
 \frac{\partial\mathbf{Y}}{\partial x_{12}} & \frac{\partial\mathbf{Y}}{\partial x_{22}} & \cdots & \frac{\partial\mathbf{Y}}{\partial x_{p2}}\\
-\vdots\\
+\vdots                                     & \vdots                                     & \ddots & \vdots\\
 \frac{\partial\mathbf{Y}}{\partial x_{1q}} & \frac{\partial\mathbf{Y}}{\partial x_{2q}} & \cdots & \frac{\partial\mathbf{Y}}{\partial x_{pq}}
 \end{bmatrix})
 (\mathbf{I}_{p\times p}\otimes \mathbf{1}_{n}).
