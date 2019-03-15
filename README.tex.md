@@ -246,7 +246,7 @@ d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\ma
                                                  & =[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)^\top\circ\sigma'(\mathbf{W}_1\mathbf{x})]^\top d(\mathbf{W}_1)\mathbf{x}         & & \text{from } \mathbf{x}^\top(\mathbf{y}\circ\mathbf{z})=(\mathbf{x}\circ\mathbf{y})^\top\mathbf{z}\\
                                                  & =[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d(\mathbf{W}_1)\mathbf{x}              & & \\
                                                  & =\mathrm{tr}([(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d(\mathbf{W}_1)\mathbf{x}) & & \text{from } x=\mathrm{tr}(x)\\
-                                                 & =\mathrm{tr}(\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d\mathbf{W}_1),  & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB}
+                                                 & =\mathrm{tr}(\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d\mathbf{W}_1),  & & \text{from } \mathrm{tr}(\mathbf{ABC})=\mathrm{tr}(\mathbf{BCA})=\mathrm{tr}(\mathbf{CAB})
 \end{align*}
 
 finally from eq. (3), we get $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_1}=\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top]\Big|_{\mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})}$.
