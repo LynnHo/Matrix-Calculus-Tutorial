@@ -56,7 +56,7 @@ Therefore $\frac{\partial v}{\partial \mathbf{W}}=2\mathbf{W}^\top \mathbf{X}\ma
 \mathbf{X}\mathbf{X}^\top\mathbf{W}=\mathbf{W}(\frac{\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top}{2})(\mathbf{I}-\frac{\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top}{2})^{-1}.
 \end{align*}
 
-Left multiply the equation by $\mathbf{W}^\top$ and use eq. (2) - $\mathbf{W}^\top\mathbf{W}=\mathbf{I}$ and eq. (3) - $\mathbf{Y}\mathbf{Y}^\top =\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top\mathbf{W} \mathbf{\Lambda}$, we get
+Left multiply the equation by $\mathbf{W}^\top$ and use eq. (2) - $\mathbf{W}^\top\mathbf{W}=\mathbf{I}$ and eq. (3) - $\mathbf{Y}\mathbf{Y}^\top =\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top\mathbf{W}=\mathbf{\Lambda}$, we get
 
 \begin{align}
 \setcounter{equation}{3}
