@@ -2,9 +2,9 @@
 
 <h1> <p align="center"> Matrix Calculus </p> </h1>
 
-In this page we introduce a ***differential*** based method for vector and matrix derivatives (matrix calculus), which ***only needs a few simple rules to derive most matrix derivatives***. This method is useful and well established in mathematics, however few documents clearly or detailedly describe it. Therefore, we make this page aiming at comprehensive introduction of ***matrix calculus via differentials***.
+In this page, we introduce a ***differential*** based method for vector and matrix derivatives (matrix calculus), which ***only needs a few simple rules to derive most matrix derivatives***. This method is useful and well established in mathematics; however, few documents clearly or detailedly describe it. Therefore, we make this page aiming at the comprehensive introduction of ***matrix calculus via differentials***.
 
-\* *If you want results only, there is an awesome online tool [Matrix Calculus](http://www.matrixcalculus.org/). If you want "how to", let's get started.*
+\* *If you want results only, there is an awesome online tool [Matrix Calculus](http://www.matrixcalculus.org/). If you want "how to," let's get started.*
 
 <!-- MarkdownTOC -->
 
@@ -101,7 +101,7 @@ d(\mathrm{tr}(\mathbf{X}))&=\mathrm{tr}(d\mathbf{X}))\\
 d(|\mathbf{X}|)&=\mathrm{tr}(adj(\mathbf{X})d\mathbf{X})=|\mathbf{X}|\mathrm{tr}(\mathbf{X}^{-1}d\mathbf{X})
 \end{align}
 
-- **Identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of total differential in eq. (19).
+- **Identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of the total differential in eq. (19).
 
 \begin{align}
 \setcounter{equation}{18}
