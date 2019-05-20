@@ -246,4 +246,4 @@ In the above, we haven't used any differential technique, because we haven't def
 (\mathbf{I}_{p\times p}\otimes \mathbf{1}_{n}).
 \end{align*}
 
-In the above, we haven't used any differential technique, because we haven't defined the derivative of matrix-by-matrix $\frac{d \mathbf{Y}}{d\mathbf{X}}$ which could be a 4D tensor. However, in some cases such as $\mathbf{Y}=\mathbf{A}\mathbf{X}$, the differential technique still works (see [this example](./README.md#Y=AX)).
+In the above, we haven't used any differential technique, because we haven't defined the derivative of matrix-by-matrix $\frac{d \mathbf{Y}}{d\mathbf{X}}$ which could be a 4D tensor. However, in some cases such as $\mathbf{Y}=\mathbf{A}\mathbf{X}$, the differential technique still works (see [this example](./README.md#Y=AX)). Besides, there is another excellent example of $\frac{d(z(\mathbf{Y}(\mathbf{X})))}{d\mathbf{X}}$: derivative of SVD - https://arxiv.org/pdf/1509.07838.pdf.
