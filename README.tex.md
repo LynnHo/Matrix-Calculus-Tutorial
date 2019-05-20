@@ -10,10 +10,10 @@ In this page, we introduce a ***differential*** based method for vector and matr
 
 - [0. Notation](#0-notation)
 - [1. Matrix Calculus via Differentials](#1-matrix-calculus-via-differentials)
-  * [1.1 Differential Identities](#11-differential-identities)
-  * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
-    + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
-    + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
+    * [1.1 Differential Identities](#11-differential-identities)
+    * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
+        + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
+        + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
 - [2. Conclusion](#2-conclusion)
 
 <!-- /MarkdownTOC -->
@@ -203,27 +203,7 @@ d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B})) & =\mathrm{tr}(d(\mathbf{A}\mathb
 
 finally from eq. (3), we get $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}=\mathbf{B}\mathbf{A}$.
 
-**E.g. 5**, prove $d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}$.
-
-Since
-
-\begin{align*}
-\mathbf{X}^{-1}\mathbf{X}=\mathbf{I},
-\end{align*}
-
-then
-
-\begin{align*}
-d(\mathbf{X}^{-1}\mathbf{X})=d(\mathbf{X}^{-1})\mathbf{X} + \mathbf{X}^{-1}d\mathbf{X}=\mathbf{0},
-\end{align*}
-
-therefore
-
-\begin{align*}
-d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}.
-\end{align*}
-
-**E.g. 6 - two layer neural network**, $l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))$, $l$ is a loss function such as Softmax Cross Entropy and MSE, $\sigma$ is an element-wise activation function such as Sigmoid and ReLU.
+**E.g. 5 - two layer neural network**, $l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))$, $l$ is a loss function such as Softmax Cross Entropy and MSE, $\sigma$ is an element-wise activation function such as Sigmoid and ReLU.
 
 For $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_2}$,
 
@@ -250,6 +230,26 @@ d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\ma
 \end{align*}
 
 finally from eq. (3), we get $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_1}=\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top]\Big|_{\mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})}$.
+
+**E.g. 6**, prove $d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}$.
+
+Since
+
+\begin{align*}
+\mathbf{X}^{-1}\mathbf{X}=\mathbf{I},
+\end{align*}
+
+then
+
+\begin{align*}
+d(\mathbf{X}^{-1}\mathbf{X})=d(\mathbf{X}^{-1})\mathbf{X} + \mathbf{X}^{-1}d\mathbf{X}=\mathbf{0},
+\end{align*}
+
+therefore
+
+\begin{align*}
+d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}.
+\end{align*}
 
 \* *See [examples.md](./examples.md) for more examples.*
 
