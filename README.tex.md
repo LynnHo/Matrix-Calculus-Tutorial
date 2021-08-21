@@ -97,7 +97,7 @@ d({\mathbf{X}\otimes\mathbf{Y}})&=(d\mathbf{X})\otimes\mathbf{Y}+\mathbf{X}\otim
 d({\mathbf{X}\circ\mathbf{Y}})&=(d\mathbf{X})\circ\mathbf{Y}+\mathbf{X}\circ(d\mathbf{Y})\\
 d(\mathbf{X}^\top )&=(d\mathbf{X})^\top\\
 d(\mathbf{X}^{-1})&=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}\\
-d(\mathrm{tr}(\mathbf{X}))&=\mathrm{tr}(d\mathbf{X}))\\
+d(\mathrm{tr}(\mathbf{X}))&=\mathrm{tr}(d\mathbf{X})\\
 d(|\mathbf{X}|)&=\mathrm{tr}(adj(\mathbf{X})d\mathbf{X})=|\mathbf{X}|\mathrm{tr}(\mathbf{X}^{-1}d\mathbf{X})
 \end{align}
 
