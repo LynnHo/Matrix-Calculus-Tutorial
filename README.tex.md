@@ -1,5 +1,6 @@
 *read \*.md, do not read \*.tex.md*
 
+
 <h1> <p align="center"> Matrix Calculus </p> </h1>
 
 In this page, we introduce a ***differential*** based method for vector and matrix derivatives (matrix calculus), which ***only needs a few simple rules to derive most matrix derivatives***. This method is useful and well established in mathematics; however, few documents clearly or detailedly describe it. Therefore, we make this page aiming at the comprehensive introduction of ***matrix calculus via differentials***.
