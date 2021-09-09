@@ -28,7 +28,7 @@ In this page, we introduce a ***differential*** based method for vector and matr
 - Here we use ***numerator layout***, while the online tool [Matrix Calculus](http://www.matrixcalculus.org/) seems to use ***mixed layout***. Please refer to [Wiki - Matrix Calculus - Layout Conventions](https://en.wikipedia.org/wiki/Matrix_calculus#Layout_conventions) for the detailed layout definitions, and keep in mind that different layouts lead to different results. Below is the numerator layout,
 
 \begin{align*}
-\frac{dyd}{d\mathbf{x}} =
+\frac{dy}{d\mathbf{x}} =
 \left[
 \frac{\partial y}{\partial x_1}
 \frac{\partial y}{\partial x_2}
