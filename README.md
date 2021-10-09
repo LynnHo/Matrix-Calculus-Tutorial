@@ -2,7 +2,7 @@
 
 <h1> <p align="center"> Matrix Calculus </p> </h1>
 
-In this page, we introduce a ***differential*** based method for vector and matrix derivatives (matrix calculus), which ***only needs a few simple rules to derive most matrix derivatives***. This method is useful and well established in mathematics; however, few documents clearly or detailedly describe it. Therefore, we make this page aiming at the comprehensive introduction of ***matrix calculus via differentials***.
+In this page, we introduce a differential based method for vector and matrix derivatives (matrix calculus), which ***only needs a few simple rules to derive most matrix derivatives***. This method is useful and well established in mathematics; however, few documents clearly or detailedly describe it. Therefore, we make this page aiming at the comprehensive introduction of ***matrix calculus via differentials***.
 
 \* *If you want results only, there is an awesome online tool [Matrix Calculus](http://www.matrixcalculus.org/). If you want "how to," let's get started.*
 

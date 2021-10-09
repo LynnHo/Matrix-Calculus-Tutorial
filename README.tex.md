@@ -2,7 +2,7 @@
 
 <h1> <p align="center"> Matrix Calculus </p> </h1>
 
-In this page, we introduce a ***differential*** based method for vector and matrix derivatives (matrix calculus), which ***only needs a few simple rules to derive most matrix derivatives***. This method is useful and well established in mathematics; however, few documents clearly or detailedly describe it. Therefore, we make this page aiming at the comprehensive introduction of ***matrix calculus via differentials***.
+In this page, we introduce a differential based method for vector and matrix derivatives (matrix calculus), which ***only needs a few simple rules to derive most matrix derivatives***. This method is useful and well established in mathematics; however, few documents clearly or detailedly describe it. Therefore, we make this page aiming at the comprehensive introduction of ***matrix calculus via differentials***.
 
 \* *If you want results only, there is an awesome online tool [Matrix Calculus](http://www.matrixcalculus.org/). If you want "how to," let's get started.*
 
@@ -25,7 +25,7 @@ In this page, we introduce a ***differential*** based method for vector and matr
 - The first half of the alphabet $(a, b, c, \cdots)$ denote constants, and the second half $(t, x, y, \cdots)$ denote variables.
 - $\mathbf{X}^\top$ denotes matrix transpose, $\mathrm{tr}(\mathbf{X})$ is the trace, $|\mathbf{X}|$ is the determinant, and $adj(\mathbf{X})$ is the adjugate matrix.
 - $\otimes$ is the Kronecker product and $\circ$ is the Hadamard product.
-- Here we use ***numerator layout***, while the online tool [Matrix Calculus](http://www.matrixcalculus.org/) seems to use ***mixed layout***. Please refer to [Wiki - Matrix Calculus - Layout Conventions](https://en.wikipedia.org/wiki/Matrix_calculus#Layout_conventions) for the detailed layout definitions, and keep in mind that different layouts lead to different results. Below is the numerator layout,
+- Here we use ***numerator layout***, while the online tool [Matrix Calculus](http://www.matrixcalculus.org/) seems to use ***mixed layout***. Please refer to [Wiki - Matrix Calculus - Layout Conventions](https://en.wikipedia.org/wiki/Matrix_calculus#Layout_conventions) for the detailed layout definitions, and keep in mind that ***different layouts lead to different results***. Below is the numerator layout,
 
 \begin{align*}
 \frac{dy}{d\mathbf{x}} =
