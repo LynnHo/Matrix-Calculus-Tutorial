@@ -31,7 +31,7 @@ where we use <img src="svg/d37fd43b0bbbbbf3e43cf14bc25fa23f.svg?invert_in_darkmo
 
 ***Next***, we will derive <img src="svg/812ea914ddbd5c7b8de749d8e906a6f8.svg?invert_in_darkmode" align=middle width=23.1558426pt height=28.9263447pt/>.
 
-<p align="center"><img src="svg/cf422bcef38201153a771c8251631942.svg?invert_in_darkmode" align=middle width=747.00524745pt height=127.9730364pt/></p>
+<p align="center"><img src="svg/def613611f4a6de062366f4d4ffb468f.svg?invert_in_darkmode" align=middle width=747.00524745pt height=127.9730364pt/></p>
 
 Therefore <img src="svg/c5aef706035e4c1858fd5dd2c833d7dd.svg?invert_in_darkmode" align=middle width=427.78704045pt height=28.9263447pt/>. Let it be <img src="svg/60eb568c0573744ea49707553106a93f.svg?invert_in_darkmode" align=middle width=9.4520052pt height=21.1872144pt/>, we get
 

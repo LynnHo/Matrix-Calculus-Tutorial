@@ -45,9 +45,9 @@ where we use $\mathbf{1}^\top(\mathbf{A}\circ\mathbf{B})\mathbf{1}=\mathrm{tr}(\
 \begin{align*}
 dv & =\mathrm{tr}(\mathbf{X}^\top(d\mathbf{W}\mathbf{W}^\top)\mathbf{X})-\mathrm{tr}(\mathbf{\Sigma}_1^\top d(\mathbf{W}^\top\mathbf{W}))-\mathrm{tr}(\mathbf{\Sigma}_2'^\top d(\mathbf{Y}\mathbf{Y}^\top))\\
    & =\mathrm{tr}(\mathbf{X}^\top(d(\mathbf{W})\mathbf{W}^\top+\mathbf{W}d(\mathbf{W}^\top))\mathbf{X})-\mathrm{tr}(\mathbf{\Sigma}_1^\top (d(\mathbf{W}^\top)\mathbf{W}+\mathbf{W}^\top d\mathbf{W}))-\mathrm{tr}(\mathbf{\Sigma}_2'^\top (d(\mathbf{Y})\mathbf{Y}^\top+\mathbf{Y}d(\mathbf{Y}^\top)))\\
-   & =\mathrm{tr}(2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top d\mathbf{W})-\mathrm{tr}(\mathbf{Y}^\top(\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)d\mathbf{Y}))\\
-   & =\mathrm{tr}(2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top d\mathbf{W})-\mathrm{tr}(\mathbf{X}^\top\mathbf{W}(\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)(d\mathbf{\mathbf{W}^\top)\mathbf{X}}))\\
-   & =\mathrm{tr}(2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top d\mathbf{\mathbf{W}})).\\
+   & =\mathrm{tr}(2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top d\mathbf{W})-\mathrm{tr}(\mathbf{Y}^\top(\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)d\mathbf{Y})\\
+   & =\mathrm{tr}(2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top d\mathbf{W})-\mathrm{tr}(\mathbf{X}^\top\mathbf{W}(\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)(d\mathbf{\mathbf{W}^\top)\mathbf{X}})\\
+   & =\mathrm{tr}(2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top d\mathbf{W})-\mathrm{tr}((\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top d\mathbf{\mathbf{W}}).\\
 \end{align*}
 
 Therefore $\frac{\partial v}{\partial \mathbf{W}}=2\mathbf{W}^\top \mathbf{X}\mathbf{X}^\top-(\mathbf{\Sigma}_1+\mathbf{\Sigma}_1^\top)\mathbf{W}^\top-(\mathbf{\Sigma}_2'+\mathbf{\Sigma}_2'^\top)\mathbf{W}^\top\mathbf{X}\mathbf{X}^\top$. Let it be $\mathbf{0}$, we get
