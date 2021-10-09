@@ -21,7 +21,7 @@ In this page, we introduce a differential based method for vector and matrix der
 
 ## 0. Notation
 
-- $x$, $\mathbf{x}$ and $\mathbf{X}$ denote $scalar$, $\mathbf{vector}$ and $\mathbf{MATRIX}$ respectively.
+- $x$, $\mathbf{x}$, and $\mathbf{X}$ denote $scalar$, $\mathbf{vector}$, and $\mathbf{MATRIX}$ respectively.
 - The first half of the alphabet $(a, b, c, \cdots)$ denote constants, and the second half $(t, x, y, \cdots)$ denote variables.
 - $\mathbf{X}^\top$ denotes matrix transpose, $\mathrm{tr}(\mathbf{X})$ is the trace, $|\mathbf{X}|$ is the determinant, and $adj(\mathbf{X})$ is the adjugate matrix.
 - $\otimes$ is the Kronecker product and $\circ$ is the Hadamard product.
