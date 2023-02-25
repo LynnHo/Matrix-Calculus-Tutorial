@@ -224,7 +224,7 @@ For $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mat
 \begin{align*}
 d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}d(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))                                                    & & \text{from eq. (2), and let } \mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})\\
                                                  & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2d(\sigma(\mathbf{W}_1\mathbf{x}))                                                    & & \text{from eq. (12)}\\
-                                                 & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2[\sigma'(\mathbf{W}_1\mathbf{x})\circ d(\mathbf{W}_1\mathbf{x})]                     & & \text{from } d(\sigma(\mathbf{x}))=\sigma'(\mathbf{x})\circ d\mathbf{x}\\
+                                                 & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2[\sigma'(\mathbf{W}_1\mathbf{x})\circ d(\mathbf{W}_1\mathbf{x})]                     & & \text{from eq. (19)}\\
                                                  & =\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2[\sigma'(\mathbf{W}_1\mathbf{x})\circ (d(\mathbf{W}_1)\mathbf{x})]                   & & \text{from eq. (12)}\\
                                                  & =[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)^\top\circ\sigma'(\mathbf{W}_1\mathbf{x})]^\top d(\mathbf{W}_1)\mathbf{x}         & & \text{from } \mathbf{x}^\top(\mathbf{y}\circ\mathbf{z})=(\mathbf{x}\circ\mathbf{y})^\top\mathbf{z}\\
                                                  & =[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top] d(\mathbf{W}_1)\mathbf{x}              & & \\

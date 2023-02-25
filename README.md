@@ -120,7 +120,7 @@ finally from eq. (3), we get <img src="svg/78a22c94609d25f957a924c8f0c5b7f7.svg?
 
 For <img src="svg/ad8e23aabf92232befd5b06cd73ac69e.svg?invert_in_darkmode" align=middle width=91.66476825pt height=33.2053986pt/>,
 
-<p align="center"><img src="svg/bad2fd7e145b38afc3b07db1f4d66e1d.svg?invert_in_darkmode" align=middle width=725.1369675pt height=349.4009343pt/></p>
+<p align="center"><img src="svg/4e6aa16db8b9845756c6d23ff43c3a1b.svg?invert_in_darkmode" align=middle width=725.1369675pt height=349.4009343pt/></p>
 
 finally from eq. (3), we get <img src="svg/e573d73540484e851f8d3ee70e3ace68.svg?invert_in_darkmode" align=middle width=401.9546586pt height=37.8085191pt/>.
 
