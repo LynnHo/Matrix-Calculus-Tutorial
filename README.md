@@ -46,7 +46,7 @@ In this page, we introduce a differential based method for vector and matrix der
 
 - **Identities 2**
 
-<p align="center"><img src="svg/3bc85e83435632e6e404f7598d5626ae.svg?invert_in_darkmode" align=middle width=833.5106802pt height=338.7455181pt/></p>
+<p align="center"><img src="svg/752ed38773e8e927062d8f93bf5a1f05.svg?invert_in_darkmode" align=middle width=629.82298335pt height=319.0194909pt/></p>
 
 
 

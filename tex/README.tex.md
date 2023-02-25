@@ -99,7 +99,7 @@ d(\mathbf{X}^\top )&=(d\mathbf{X})^\top\\
 d(\mathbf{X}^{-1})&=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}\\
 d(\mathrm{tr}(\mathbf{X}))&=\mathrm{tr}(d\mathbf{X})\\
 d(|\mathbf{X}|)&=\mathrm{tr}(adj(\mathbf{X})d\mathbf{X})=|\mathbf{X}|\mathrm{tr}(\mathbf{X}^{-1}d\mathbf{X})\\
-d(\sigma(X))&=\sigma'(X)\circ dX & & \text{where $\sigma$ is an element-wise function}
+d(\sigma(\mathbf{X}))&=\sigma'(\mathbf{X})\circ d\mathbf{X}~~~\text{where $\sigma$ is an element-wise function}
 \end{align}
 
 
