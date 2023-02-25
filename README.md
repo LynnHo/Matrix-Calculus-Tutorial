@@ -46,11 +46,13 @@ In this page, we introduce a differential based method for vector and matrix der
 
 - **Identities 2**
 
-<p align="center"><img src="svg/11e62222a1ba82f1c2d693b3102822eb.svg?invert_in_darkmode" align=middle width=629.82298335pt height=294.3619569pt/></p>
+<p align="center"><img src="svg/3bc85e83435632e6e404f7598d5626ae.svg?invert_in_darkmode" align=middle width=833.5106802pt height=338.7455181pt/></p>
 
-- **Identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of the total differential in eq. (19).
 
-<p align="center"><img src="svg/58cbcc2d86dfc0d5e1ec973d164b4f4f.svg?invert_in_darkmode" align=middle width=495.735801pt height=167.7598131pt/></p>
+
+- **Identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of the total differential in eq. (20).
+
+<p align="center"><img src="svg/021173cb677f271e8aeb59aebba5da4f.svg?invert_in_darkmode" align=middle width=495.735801pt height=167.7598131pt/></p>
 
 ### 1.2 Deriving Matrix Derivatives
 

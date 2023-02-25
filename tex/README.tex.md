@@ -98,13 +98,16 @@ d({\mathbf{X}\circ\mathbf{Y}})&=(d\mathbf{X})\circ\mathbf{Y}+\mathbf{X}\circ(d\m
 d(\mathbf{X}^\top )&=(d\mathbf{X})^\top\\
 d(\mathbf{X}^{-1})&=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}\\
 d(\mathrm{tr}(\mathbf{X}))&=\mathrm{tr}(d\mathbf{X})\\
-d(|\mathbf{X}|)&=\mathrm{tr}(adj(\mathbf{X})d\mathbf{X})=|\mathbf{X}|\mathrm{tr}(\mathbf{X}^{-1}d\mathbf{X})
+d(|\mathbf{X}|)&=\mathrm{tr}(adj(\mathbf{X})d\mathbf{X})=|\mathbf{X}|\mathrm{tr}(\mathbf{X}^{-1}d\mathbf{X})\\
+d(\sigma(X))&=\sigma'(X)\circ dX & & \text{where $\sigma$ is an element-wise function}
 \end{align}
 
-- **Identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of the total differential in eq. (19).
+
+
+- **Identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of the total differential in eq. (20).
 
 \begin{align}
-\setcounter{equation}{18}
+\setcounter{equation}{19}
 df(x,y,z)&=\frac{\partial f}{\partial x}dx+\frac{\partial f}{\partial y}dy+\frac{\partial f}{\partial z}dz\\
 df(x,\mathbf{y},\mathbf{Z})&=\frac{\partial f}{\partial x}dx+\frac{\partial f}{\partial \mathbf{y}}d\mathbf{y}+\mathrm{tr}(\frac{\partial f}{\partial \mathbf{Z}}d\mathbf{Z})\\
 d\mathbf{f}(x,\mathbf{y})&=\frac{\partial \mathbf{f}}{\partial x}dx+\frac{\partial \mathbf{f}}{\partial \mathbf{y}}d\mathbf{y}\\
