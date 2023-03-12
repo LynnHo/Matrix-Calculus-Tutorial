@@ -107,7 +107,15 @@ d(\sigma(\mathbf{X}))&=\sigma'(\mathbf{X})\circ d\mathbf{X}~~~\text{where $\sigm
 d(z(\mathbf{y}(\mathbf{x})))&=\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}\\
 d(z(y(\mathbf{X})))&=\mathrm{tr}(\frac{dz}{dy}\frac{dy}{d\mathbf{X}}d\mathbf{X})\\
 d(z(\mathbf{Y}(x)))&=\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{dx})dx\\
-d(\mathbf{z}(\mathbf{y}(\mathbf{x})))&=\frac{d\mathbf{z}}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}
+d(\mathbf{z}(\mathbf{y}(\mathbf{x})))&=\frac{d\mathbf{z}}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}\\
+d(z(\mathbf{y}(\mathbf{X})))&=\mathrm{tr}((\mathbf{I}_{q\times q}\otimes \frac{\partial z}{\partial \mathbf{y}})
+\begin{bmatrix}
+\frac{\partial \mathbf{y}}{\partial x_{:1}}\\
+\frac{\partial \mathbf{y}}{\partial x_{:2}}\\
+\vdots\\
+\frac{\partial \mathbf{y}}{\partial x_{:q}}\\
+\end{bmatrix}
+d\mathbf{X})
 \end{align}
 
 - **Identities 4 - total differential**. Actually, all identities 1 are the matrix form of the total differential in eq. (24).
