@@ -60,25 +60,25 @@ To derive a matrix derivative, we ***repeat using the identities 1 (the process 
 
 #### 1.2.1 Proof of chain rules (identities 3)
 
-**1** <img src="svg/d6d4dc6b6bbabac486dad7ac3011ac17.svg?invert_in_darkmode" align=middle width=60.334188749999996pt height=33.205398599999995pt/>
+- <img src="svg/d6d4dc6b6bbabac486dad7ac3011ac17.svg?invert_in_darkmode" align=middle width=60.334188749999996pt height=33.205398599999995pt/>
 
 <p align="center"><img src="svg/1785e0685f7ee389a54613ef7f82cffd.svg?invert_in_darkmode" align=middle width=363.51749114999996pt height=80.59222875pt/></p>
 
 finally from eq. (2), we get <img src="svg/aca022a8d9084c704593d90b61128967.svg?invert_in_darkmode" align=middle width=74.31442095pt height=30.648287999999997pt/>.
 
-**2** <img src="svg/3afabb957686c850a9375e82d19dcd8f.svg?invert_in_darkmode" align=middle width=62.63411055pt height=33.205398599999995pt/>
+- <img src="svg/3afabb957686c850a9375e82d19dcd8f.svg?invert_in_darkmode" align=middle width=62.63411055pt height=33.205398599999995pt/>
 
 <p align="center"><img src="svg/3316e279dabb3f4cbaee0f558700433e.svg?invert_in_darkmode" align=middle width=385.11320099999995pt height=124.17602174999999pt/></p>
 
 finally from eq. (3), we get <img src="svg/330946ab78a470ca64f4e5107987af4b.svg?invert_in_darkmode" align=middle width=79.69079415pt height=30.648287999999997pt/>.
 
-**3** <img src="svg/fbbdc722022c465f2ae6b48c36598d95.svg?invert_in_darkmode" align=middle width=63.37669304999999pt height=33.205398599999995pt/>
+- <img src="svg/fbbdc722022c465f2ae6b48c36598d95.svg?invert_in_darkmode" align=middle width=63.37669304999999pt height=33.205398599999995pt/>
 
 <p align="center"><img src="svg/f840b4416a3f64d656eb04af8c3bbbff.svg?invert_in_darkmode" align=middle width=386.2404777pt height=114.5869824pt/></p>
 
 finally from eq. (1), we get <img src="svg/367ed500e49383632c93a4446f39ec80.svg?invert_in_darkmode" align=middle width=108.3902985pt height=28.926344699999998pt/>.
 
-**4** <img src="svg/b4d21fc6fdd5d14a267710723a939ba5.svg?invert_in_darkmode" align=middle width=60.21195674999999pt height=33.205398599999995pt/>
+- <img src="svg/b4d21fc6fdd5d14a267710723a939ba5.svg?invert_in_darkmode" align=middle width=60.21195674999999pt height=33.205398599999995pt/>
 
 <p align="center"><img src="svg/7ef1edf6b0f8989ae7b66a74185a21ef.svg?invert_in_darkmode" align=middle width=363.5402661pt height=80.59222875pt/></p>
 
@@ -86,19 +86,19 @@ finally from eq. (5), we get <img src="svg/f8f3b0df92ab2d964857892f8ffec8b0.svg?
 
 #### 1.2.2 Practical examples
 
-**E.g. 1** <img src="svg/4e82ca6abaed2097dcbead8adf01afec.svg?invert_in_darkmode" align=middle width=42.555557549999996pt height=37.2821757pt/>
+**E.g. 1**, <img src="svg/4e82ca6abaed2097dcbead8adf01afec.svg?invert_in_darkmode" align=middle width=42.555557549999996pt height=37.2821757pt/>
 
 <p align="center"><img src="svg/9c310a80928421f0554386569eb27c3b.svg?invert_in_darkmode" align=middle width=439.95767474999997pt height=99.78847065pt/></p>
 
 finally from eq. (2), we get <img src="svg/c6c1fe4311d8e38885392c2de18807a6.svg?invert_in_darkmode" align=middle width=94.91611635pt height=37.2821757pt/>.
 
-<a name="y=Wx"></a>**E.g. 2**, <img src="svg/2f241d50ab9d1c15bdbfc64ffdcefbf4.svg?invert_in_darkmode" align=middle width=70.31119589999999pt height=37.2821229pt/>.
+<a name="y=Wx"></a>**E.g. 2**, <img src="svg/2f241d50ab9d1c15bdbfc64ffdcefbf4.svg?invert_in_darkmode" align=middle width=70.31119589999999pt height=37.2821229pt/>
 
 <p align="center"><img src="svg/39d4c566edf7d6adc782e6c16982b883.svg?invert_in_darkmode" align=middle width=627.40374675pt height=258.7181157pt/></p>
 
 finally from eq. (3), we get <img src="svg/e5707fda1f7e245c298e383e9f86c6bb.svg?invert_in_darkmode" align=middle width=195.57101685pt height=37.2821229pt/>. From line 3 to 4, we use the conclusion of <img src="svg/d1e757ff485f61fbd67a2c6e31bcf033.svg?invert_in_darkmode" align=middle width=84.64209435pt height=34.281653999999996pt/>, that is to say, we can derive more complicated  matrix derivatives by properly utilizing the existing ones. From line 6 to 7, we use <img src="svg/d84c3c399a65b6a8a262aa3315ab4b75.svg?invert_in_darkmode" align=middle width=66.32411775pt height=24.657534pt/> to introduce the <img src="svg/a4035517c00ae250425f359c6b7eccfb.svg?invert_in_darkmode" align=middle width=30.182757pt height=24.657534pt/> in order to use eq. (3) later, which is common in scalar-by-matrix derivatives.
 
-**E.g. 3** <img src="svg/966fb4dd3b3a91718c1964cff5c791d0.svg?invert_in_darkmode" align=middle width=49.28919104999999pt height=33.205398599999995pt/>
+**E.g. 3**, <img src="svg/966fb4dd3b3a91718c1964cff5c791d0.svg?invert_in_darkmode" align=middle width=49.28919104999999pt height=33.205398599999995pt/>
 
 <p align="center"><img src="svg/3f4278ebe0e8315ac8ce2a95ebd102c5.svg?invert_in_darkmode" align=middle width=449.3987783999999pt height=71.70438164999999pt/></p>
 
@@ -110,7 +110,7 @@ finally from eq. (3), we get <img src="svg/840804c350d128bab42a8842217b8afb.svg?
 
 finally from eq. (3), we get <img src="svg/a3786564a3359ce0856a2cde2ae2a55f.svg?invert_in_darkmode" align=middle width=122.08714154999998pt height=33.205398599999995pt/>.
 
-**E.g. 5 - two layer neural network** <img src="svg/72e84c4903b48d5de424c69d2dc906b3.svg?invert_in_darkmode" align=middle width=104.59468799999999pt height=24.657534pt/>, <img src="svg/2f2322dff5bde89c37bcae4116fe20a8.svg?invert_in_darkmode" align=middle width=5.2283517pt height=22.8310566pt/> is a loss function such as Softmax Cross Entropy and MSE, <img src="svg/8cda31ed38c6d59d14ebefa440099572.svg?invert_in_darkmode" align=middle width=9.98290095pt height=14.1552444pt/> is an element-wise activation function such as Sigmoid and ReLU
+**E.g. 5 - two layer neural network**, <img src="svg/72e84c4903b48d5de424c69d2dc906b3.svg?invert_in_darkmode" align=middle width=104.59468799999999pt height=24.657534pt/>, <img src="svg/2f2322dff5bde89c37bcae4116fe20a8.svg?invert_in_darkmode" align=middle width=5.2283517pt height=22.8310566pt/> is a loss function such as Softmax Cross Entropy and MSE, <img src="svg/8cda31ed38c6d59d14ebefa440099572.svg?invert_in_darkmode" align=middle width=9.98290095pt height=14.1552444pt/> is an element-wise activation function such as Sigmoid and ReLU
 
 For <img src="svg/1b029168f72ed78ed025d43ee12a30d5.svg?invert_in_darkmode" align=middle width=91.66476825pt height=33.205398599999995pt/>,
 
@@ -124,7 +124,7 @@ For <img src="svg/ad8e23aabf92232befd5b06cd73ac69e.svg?invert_in_darkmode" align
 
 finally from eq. (3), we get <img src="svg/e573d73540484e851f8d3ee70e3ace68.svg?invert_in_darkmode" align=middle width=401.95465859999996pt height=37.8085191pt/>.
 
-**E.g. 6** prove <img src="svg/42f3c1118cca6aa234b8b5726d36587f.svg?invert_in_darkmode" align=middle width=186.67800359999998pt height=26.761752599999998pt/>
+**E.g. 6**, prove <img src="svg/42f3c1118cca6aa234b8b5726d36587f.svg?invert_in_darkmode" align=middle width=186.67800359999998pt height=26.761752599999998pt/>
 
 Since
 

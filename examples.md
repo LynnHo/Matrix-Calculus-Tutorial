@@ -9,7 +9,7 @@
 
 ## 1. Practical Examples
 
-**E.g. 1** Deriving PCA by minimizing MSE
+**E.g. 1**, Deriving PCA by minimizing MSE
 
 - <img src="svg/684d1346c74b9987de0c17d9c53cf2ac.svg?invert_in_darkmode" align=middle width=203.00764604999998pt height=24.657534pt/>, <img src="svg/c416d0c6d8ab37f889334e2d1a9863c3.svg?invert_in_darkmode" align=middle width=14.628015599999998pt height=14.611878599999999pt/> is the <img src="svg/77a3b857d53fb44e33b53e4c8b68351a.svg?invert_in_darkmode" align=middle width=5.6632257pt height=21.6830097pt/>-th sample with m dimension. Assume for simplicity that <img src="svg/d05b996d2c08252f77613c25205a0f04.svg?invert_in_darkmode" align=middle width=14.292166349999999pt height=22.5570873pt/> has zero mean.
 - <img src="svg/805f1ba29a4965179d1766344a78003f.svg?invert_in_darkmode" align=middle width=217.82867865pt height=24.657534pt/>, <img src="svg/831047ac6f850b0d588c94d84fc6f4c1.svg?invert_in_darkmode" align=middle width=19.757405249999998pt height=14.611878599999999pt/> is the <img src="svg/36b5afebdba34564d884d347484ac0c7.svg?invert_in_darkmode" align=middle width=7.710417pt height=21.6830097pt/>-th basis vector with m dimension.
