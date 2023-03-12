@@ -48,7 +48,7 @@ In this page, we introduce a differential based method for vector and matrix der
 
 - **Identities 3 - chain rules**
 
-<p align="center"><img src="svg/1f527f9915a9ca1bb8b486b7e7517e9b.svg?invert_in_darkmode" align=middle width=520.58807955pt height=378.06335985pt/></p>
+<p align="center"><img src="svg/78a385f52ad528637f7bff9cab125423.svg?invert_in_darkmode" align=middle width=449.86519875pt height=164.5634694pt/></p>
 
 - **Identities 4 - total differential**. Actually, all identities 1 are the matrix form of the total differential in eq. (24).
 
