@@ -3,7 +3,7 @@
 <!-- MarkdownTOC -->
 
 - [1. Practical Examples](#1-practical-examples)
-- [2. Abstract Examples](#2-abstract-examples)
+- [2. Special Examples](#2-special-examples)
 
 <!-- /MarkdownTOC -->
 
@@ -82,9 +82,9 @@ therefore ***$\lambda_1$, $\lambda_2$, ..., $\lambda_k$ should be the largest k 
 
 
 
-## 2. Abstract Examples
+## 2. Special Examples
 
-**E.g. 1** $\frac{d(z(\mathbf{y}(\mathbf{X})))}{d\mathbf{X}}$, where $\mathbf{X}$ is a $p\times q$ matrix
+**E.g. 1**, $\frac{d(z(\mathbf{y}(\mathbf{X})))}{d\mathbf{X}}$, where $\mathbf{X}$ is a $p\times q$ matrix
 
 \begin{align*}
 \frac{dz}{d\mathbf{X}} & =
@@ -174,7 +174,7 @@ or
 
 In the above, we haven't used any differential technique, because we haven't defined the derivative of vector-by-matrix $\frac{d \mathbf{y}}{d\mathbf{X}}$ which could be a 3D tensor. However, in some cases such as $\mathbf{y}=\mathbf{W}\mathbf{x}$ (w.r.t. $\mathbf{W}$), the differential technique still works (see [this example](./README.md#y=Wx)).
 
-**E.g. 2** $\frac{d(z(\mathbf{Y}(\mathbf{X})))}{d\mathbf{X}}$, where $\mathbf{Y}$ is a $m\times n$ matrix and $\mathbf{X}$ is a $p\times q$ matrix
+**E.g. 2**, $\frac{d(z(\mathbf{Y}(\mathbf{X})))}{d\mathbf{X}}$, where $\mathbf{Y}$ is a $m\times n$ matrix and $\mathbf{X}$ is a $p\times q$ matrix
 
 \begin{align*}
 \frac{dz}{d\mathbf{X}} & =

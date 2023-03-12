@@ -202,7 +202,7 @@ d(\ln|\mathbf{X}|) & =|\mathbf{X}|^{-1}d(|\mathbf{X}|)                          
 
 finally from eq. (3), we get $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}=\mathbf{X}^{-1}$.
 
-<a name="Y=AX"></a>**E.g. 4** $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}$
+<a name="Y=AX"></a>**E.g. 4**, $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}$
 
 \begin{align*}
 d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B})) & =\mathrm{tr}(d(\mathbf{A}\mathbf{X}\mathbf{B})) & & \text{from eq. (17)}\\

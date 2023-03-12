@@ -104,7 +104,7 @@ finally from eq. (3), we get <img src="svg/e5707fda1f7e245c298e383e9f86c6bb.svg?
 
 finally from eq. (3), we get <img src="svg/840804c350d128bab42a8842217b8afb.svg?invert_in_darkmode" align=middle width=104.2980939pt height=33.205398599999995pt/>.
 
-<a name="Y=AX"></a>**E.g. 4** <img src="svg/4a3ad3efe4ae7a1b4d75f4b88a821967.svg?invert_in_darkmode" align=middle width=70.45737435pt height=33.205398599999995pt/>
+<a name="Y=AX"></a>**E.g. 4**, <img src="svg/4a3ad3efe4ae7a1b4d75f4b88a821967.svg?invert_in_darkmode" align=middle width=70.45737435pt height=33.205398599999995pt/>
 
 <p align="center"><img src="svg/a7a66e09e9d6d5bdcc6a3e7b9270709f.svg?invert_in_darkmode" align=middle width=555.8363975999999pt height=65.753424pt/></p>
 
