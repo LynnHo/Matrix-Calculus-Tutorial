@@ -9,7 +9,7 @@
 
 ## 1. Practical Examples
 
-**E.g. 1** Deriving PCA by minimizing MSE
+**E.g. 1**, Deriving PCA by minimizing MSE
 
 - $\mathbf{X}=[\mathbf{x}_1~~~\mathbf{x}_2~~~\cdots~~~\mathbf{x}_n]_{m\times n}$, $\mathbf{x}_i$ is the $i$-th sample with m dimension. Assume for simplicity that $\mathbf{X}$ has zero mean.
 - $\mathbf{W}=[\mathbf{w}_1~~~\mathbf{w}_2~~~\cdots~~~\mathbf{w}_k]_{m\times k}$, $\mathbf{w}_j$ is the $j$-th basis vector with m dimension.

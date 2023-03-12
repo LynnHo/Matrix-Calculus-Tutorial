@@ -126,7 +126,7 @@ To derive a matrix derivative, we ***repeat using the identities 1 (the process 
 
 #### 1.2.1 Proof of chain rules (identities 3)
 
-**1** $\frac{d(z(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$
+- $\frac{d(z(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$
 
 \begin{align*}
 dz & =\frac{dz}{d\mathbf{y}}d\mathbf{y}                                 & & \text{from eq. (2)}\\
@@ -135,7 +135,7 @@ dz & =\frac{dz}{d\mathbf{y}}d\mathbf{y}                                 & & \tex
 
 finally from eq. (2), we get $\frac{dz}{d\mathbf{x}}=\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}$.
 
-**2** $\frac{d(z(y(\mathbf{X})))}{d\mathbf{X}}$
+- $\frac{d(z(y(\mathbf{X})))}{d\mathbf{X}}$
 
 \begin{align*}
 dz & =\frac{dz}{dy}dy                                              & & \text{from eq. (1)}\\
@@ -145,7 +145,7 @@ dz & =\frac{dz}{dy}dy                                              & & \text{fro
 
 finally from eq. (3), we get $\frac{dz}{d\mathbf{X}}=\frac{dz}{dy}\frac{dy}{d\mathbf{X}}$.
 
-**3** $\frac{d(z(\mathbf{Y}(x)))}{dx}$
+- $\frac{d(z(\mathbf{Y}(x)))}{dx}$
 
 \begin{align*}
 dz & =\mathrm{tr}(\frac{dz}{d\mathbf{Y}}d\mathbf{Y})               & & \text{from eq. (3)}\\
@@ -155,7 +155,7 @@ dz & =\mathrm{tr}(\frac{dz}{d\mathbf{Y}}d\mathbf{Y})               & & \text{fro
 
 finally from eq. (1), we get $\frac{dz}{dx}=\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{x})$.
 
-**4** $\frac{d(\mathbf{z}(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$
+- $\frac{d(\mathbf{z}(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$
 
 \begin{align*}
 d\mathbf{z} & =\frac{d\mathbf{z}}{d\mathbf{y}}d\mathbf{y}                                 & & \text{from eq. (5)}\\
@@ -166,7 +166,7 @@ finally from eq. (5), we get $\frac{d\mathbf{z}}{d\mathbf{x}}=\frac{d\mathbf{z}}
 
 #### 1.2.2 Practical examples
 
-**E.g. 1** $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}$
+**E.g. 1**, $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}$
 
 \begin{align*}
 d(\mathbf{x}^\top \mathbf{x}) & =d(\mathbf{x}^\top )\mathbf{x}+\mathbf{x}^\top d\mathbf{x} & & \text{from eq. (10)}\\
@@ -177,7 +177,7 @@ d(\mathbf{x}^\top \mathbf{x}) & =d(\mathbf{x}^\top )\mathbf{x}+\mathbf{x}^\top d
 
 finally from eq. (2), we get $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}=2\mathbf{x}^\top$.
 
-<a name="y=Wx"></a>**E.g. 2**, $\frac{d||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2}{d\mathbf{W}}$.
+<a name="y=Wx"></a>**E.g. 2**, $\frac{d||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2}{d\mathbf{W}}$
 
 \begin{align*}
 d(||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2) & =d((\mathbf{W}\mathbf{x}+\mathbf{b})^\top (\mathbf{W}\mathbf{x}+\mathbf{b}))                                   & & \\
@@ -192,7 +192,7 @@ d(||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2) & =d((\mathbf{W}\mathbf{x}+\mathbf{b}
 
 finally from eq. (3), we get $\frac{d||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2}{d\mathbf{W}}=2\mathbf{x}(\mathbf{W}\mathbf{x}+\mathbf{b})^\top$. From line 3 to 4, we use the conclusion of $\frac{d\mathbf{x}^\top \mathbf{x}}{d\mathbf{x}}=2\mathbf{x}^\top$, that is to say, we can derive more complicated  matrix derivatives by properly utilizing the existing ones. From line 6 to 7, we use $x=\mathrm{tr}(x)$ to introduce the $\mathrm{tr(\cdot)}$ in order to use eq. (3) later, which is common in scalar-by-matrix derivatives.
 
-**E.g. 3** $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}$
+**E.g. 3**, $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}$
 
 \begin{align*}
 d(\ln|\mathbf{X}|) & =|\mathbf{X}|^{-1}d(|\mathbf{X}|)                                     & & \text{from eq. (1)}\\
@@ -212,7 +212,7 @@ d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B})) & =\mathrm{tr}(d(\mathbf{A}\mathb
 
 finally from eq. (3), we get $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}=\mathbf{B}\mathbf{A}$.
 
-**E.g. 5 - two layer neural network** $l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))$, $l$ is a loss function such as Softmax Cross Entropy and MSE, $\sigma$ is an element-wise activation function such as Sigmoid and ReLU
+**E.g. 5 - two layer neural network**, $l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))$, $l$ is a loss function such as Softmax Cross Entropy and MSE, $\sigma$ is an element-wise activation function such as Sigmoid and ReLU
 
 For $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_2}$,
 
@@ -240,7 +240,7 @@ d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\ma
 
 finally from eq. (3), we get $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_1}=\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top]\Big|_{\mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})}$.
 
-**E.g. 6** prove $d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}$
+**E.g. 6**, prove $d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}$
 
 Since
 
