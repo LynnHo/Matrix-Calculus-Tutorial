@@ -106,7 +106,7 @@ d(\sigma(\mathbf{X}))&=\sigma'(\mathbf{X})\circ d\mathbf{X}~~~\text{where $\sigm
 \setcounter{equation}{19}
 d(z(\mathbf{y}(\mathbf{x})))&=\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}\\
 d(z(y(\mathbf{X})))&=\mathrm{tr}(\frac{dz}{dy}\frac{dy}{d\mathbf{X}}d\mathbf{X})\\
-d(z(\mathbf{Y}(x)))&=\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{dx})dx\\
+d(z(\mathbf{Y}(x)))&=\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{dx}dx)\\
 d(\mathbf{z}(\mathbf{y}(\mathbf{x})))&=\frac{d\mathbf{z}}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}
 \end{align}
 
