@@ -1,5 +1,3 @@
-*read \*.md, do not read \*.tex.md*
-
 <h1> <p align="center"> Matrix Calculus </p> </h1>
 
 In this page, we introduce a differential based method for vector and matrix derivatives (matrix calculus), which ***only needs a few simple rules to derive most matrix derivatives***. This method is useful and well established in mathematics; however, few documents clearly or detailedly describe it. Therefore, we make this page aiming at the comprehensive introduction of ***matrix calculus via differentials***.
@@ -12,8 +10,8 @@ In this page, we introduce a differential based method for vector and matrix der
 - [1. Matrix Calculus via Differentials](#1-matrix-calculus-via-differentials)
     * [1.1 Differential Identities](#11-differential-identities)
     * [1.2 Deriving Matrix Derivatives](#12-deriving-matrix-derivatives)
-        + [1.2.1 Abstract examples: repeat identities 1](#121-abstract-examples-repeat-identities-1)
-        + [1.2.2 Actual examples: assisted by identities 2](#122-actual-examples-assisted-by-identities-2)
+        + [1.2.1 Proof of chain rules \(identities 3\)](#121-proof-of-chain-rules-identities-3)
+        + [1.2.2 Practical examples](#122-practical-examples)
 - [2. Conclusion](#2-conclusion)
 
 <!-- /MarkdownTOC -->
@@ -102,12 +100,20 @@ d(|\mathbf{X}|)&=\mathrm{tr}(adj(\mathbf{X})d\mathbf{X})=|\mathbf{X}|\mathrm{tr}
 d(\sigma(\mathbf{X}))&=\sigma'(\mathbf{X})\circ d\mathbf{X}~~~\text{where $\sigma$ is an element-wise function}
 \end{align}
 
-
-
-- **Identities 1.5 - total differential**. Actually, all identities 1 are the matrix form of the total differential in eq. (20).
+- **Identities 3 - chain rules**
 
 \begin{align}
 \setcounter{equation}{19}
+d(z(\mathbf{y}(\mathbf{x})))&=\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}\\
+d(z(y(\mathbf{X})))&=\mathrm{tr}(\frac{dz}{dy}\frac{dy}{d\mathbf{X}}d\mathbf{X})\\
+d(z(\mathbf{Y}(x)))&=\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{dx})dx\\
+d(\mathbf{z}(\mathbf{y}(\mathbf{x})))&=\frac{d\mathbf{z}}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}d\mathbf{x}
+\end{align}
+
+- **Identities 4 - total differential**. Actually, all identities 1 are the matrix form of the total differential in eq. (24).
+
+\begin{align}
+\setcounter{equation}{23}
 df(x,y,z)&=\frac{\partial f}{\partial x}dx+\frac{\partial f}{\partial y}dy+\frac{\partial f}{\partial z}dz\\
 df(x,\mathbf{y},\mathbf{Z})&=\frac{\partial f}{\partial x}dx+\frac{\partial f}{\partial \mathbf{y}}d\mathbf{y}+\mathrm{tr}(\frac{\partial f}{\partial \mathbf{Z}}d\mathbf{Z})\\
 d\mathbf{f}(x,\mathbf{y})&=\frac{\partial \mathbf{f}}{\partial x}dx+\frac{\partial \mathbf{f}}{\partial \mathbf{y}}d\mathbf{y}\\
@@ -118,9 +124,9 @@ d\mathbf{F}(x,y,z)&=\frac{\partial \mathbf{F}}{\partial x}dx+\frac{\partial \mat
 
 To derive a matrix derivative, we ***repeat using the identities 1 (the process is actually a chain rule)*** assisted by identities 2.
 
-#### 1.2.1 Abstract examples: repeat identities 1
+#### 1.2.1 Proof of chain rules (identities 3)
 
-**E.g. 1**, $\frac{d(z(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$.
+**1** $\frac{d(z(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$
 
 \begin{align*}
 dz & =\frac{dz}{d\mathbf{y}}d\mathbf{y}                                 & & \text{from eq. (2)}\\
@@ -129,7 +135,7 @@ dz & =\frac{dz}{d\mathbf{y}}d\mathbf{y}                                 & & \tex
 
 finally from eq. (2), we get $\frac{dz}{d\mathbf{x}}=\frac{dz}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}$.
 
-**E.g. 2**, $\frac{d(z(y(\mathbf{X})))}{d\mathbf{X}}$.
+**2** $\frac{d(z(y(\mathbf{X})))}{d\mathbf{X}}$
 
 \begin{align*}
 dz & =\frac{dz}{dy}dy                                              & & \text{from eq. (1)}\\
@@ -139,7 +145,7 @@ dz & =\frac{dz}{dy}dy                                              & & \text{fro
 
 finally from eq. (3), we get $\frac{dz}{d\mathbf{X}}=\frac{dz}{dy}\frac{dy}{d\mathbf{X}}$.
 
-**E.g. 3**, $\frac{d(z(\mathbf{Y}(x)))}{dx}$.
+**3** $\frac{d(z(\mathbf{Y}(x)))}{dx}$
 
 \begin{align*}
 dz & =\mathrm{tr}(\frac{dz}{d\mathbf{Y}}d\mathbf{Y})               & & \text{from eq. (3)}\\
@@ -149,7 +155,7 @@ dz & =\mathrm{tr}(\frac{dz}{d\mathbf{Y}}d\mathbf{Y})               & & \text{fro
 
 finally from eq. (1), we get $\frac{dz}{dx}=\mathrm{tr}(\frac{dz}{d\mathbf{Y}}\frac{d\mathbf{Y}}{x})$.
 
-**E.g. 4**, $\frac{d(\mathbf{z}(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$.
+**4** $\frac{d(\mathbf{z}(\mathbf{y}(\mathbf{x})))}{d\mathbf{x}}$
 
 \begin{align*}
 d\mathbf{z} & =\frac{d\mathbf{z}}{d\mathbf{y}}d\mathbf{y}                                 & & \text{from eq. (5)}\\
@@ -158,9 +164,9 @@ d\mathbf{z} & =\frac{d\mathbf{z}}{d\mathbf{y}}d\mathbf{y}                       
 
 finally from eq. (5), we get $\frac{d\mathbf{z}}{d\mathbf{x}}=\frac{d\mathbf{z}}{d\mathbf{y}}\frac{d\mathbf{y}}{d\mathbf{x}}$.
 
-#### 1.2.2 Actual examples: assisted by identities 2
+#### 1.2.2 Practical examples
 
-**E.g. 1**, $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}$.
+**E.g. 1** $\frac{d(\mathbf{x}^\top \mathbf{x})}{d\mathbf{x}}$
 
 \begin{align*}
 d(\mathbf{x}^\top \mathbf{x}) & =d(\mathbf{x}^\top )\mathbf{x}+\mathbf{x}^\top d\mathbf{x} & & \text{from eq. (10)}\\
@@ -186,7 +192,7 @@ d(||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2) & =d((\mathbf{W}\mathbf{x}+\mathbf{b}
 
 finally from eq. (3), we get $\frac{d||\mathbf{W}\mathbf{x}+\mathbf{b}||_2^2}{d\mathbf{W}}=2\mathbf{x}(\mathbf{W}\mathbf{x}+\mathbf{b})^\top$. From line 3 to 4, we use the conclusion of $\frac{d\mathbf{x}^\top \mathbf{x}}{d\mathbf{x}}=2\mathbf{x}^\top$, that is to say, we can derive more complicated  matrix derivatives by properly utilizing the existing ones. From line 6 to 7, we use $x=\mathrm{tr}(x)$ to introduce the $\mathrm{tr(\cdot)}$ in order to use eq. (3) later, which is common in scalar-by-matrix derivatives.
 
-**E.g. 3**, $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}$.
+**E.g. 3** $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}$
 
 \begin{align*}
 d(\ln|\mathbf{X}|) & =|\mathbf{X}|^{-1}d(|\mathbf{X}|)                                     & & \text{from eq. (1)}\\
@@ -196,7 +202,7 @@ d(\ln|\mathbf{X}|) & =|\mathbf{X}|^{-1}d(|\mathbf{X}|)                          
 
 finally from eq. (3), we get $\frac{d(\ln|\mathbf{X}|)}{d\mathbf{X}}=\mathbf{X}^{-1}$.
 
-<a name="Y=AX"></a>**E.g. 4**, $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}$.
+<a name="Y=AX"></a>**E.g. 4** $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}$
 
 \begin{align*}
 d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B})) & =\mathrm{tr}(d(\mathbf{A}\mathbf{X}\mathbf{B})) & & \text{from eq. (17)}\\
@@ -206,7 +212,7 @@ d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B})) & =\mathrm{tr}(d(\mathbf{A}\mathb
 
 finally from eq. (3), we get $\frac{d(\mathrm{tr}(\mathbf{A}\mathbf{X}\mathbf{B}))}{d\mathbf{X}}=\mathbf{B}\mathbf{A}$.
 
-**E.g. 5 - two layer neural network**, $l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))$, $l$ is a loss function such as Softmax Cross Entropy and MSE, $\sigma$ is an element-wise activation function such as Sigmoid and ReLU.
+**E.g. 5 - two layer neural network** $l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))$, $l$ is a loss function such as Softmax Cross Entropy and MSE, $\sigma$ is an element-wise activation function such as Sigmoid and ReLU
 
 For $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_2}$,
 
@@ -234,7 +240,7 @@ d(l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))) & =\frac{d(l(\mathbf{y}))}{d\ma
 
 finally from eq. (3), we get $\frac{\partial l(\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x}))}{\partial \mathbf{W}_1}=\mathbf{x}[(\frac{d(l(\mathbf{y}))}{d\mathbf{y}}\mathbf{W}_2)\circ\sigma'(\mathbf{W}_1\mathbf{x})^\top]\Big|_{\mathbf{y}=\mathbf{W}_2\sigma(\mathbf{W}_1\mathbf{x})}$.
 
-**E.g. 6**, prove $d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}$.
+**E.g. 6** prove $d(\mathbf{X}^{-1})=-\mathbf{X}^{-1}(d\mathbf{X})\mathbf{X}^{-1}$
 
 Since
 
